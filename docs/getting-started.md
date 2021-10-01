@@ -18,7 +18,7 @@ For more information please refer to [How to deploy tenant Server](?path=docs/ge
 
 ## Tenant Registration
 
-To get started with as a new Tenant, developer needs to setup new account by [Tenant Registration](?path=docs/getting-started/setup-tenant/register-tenant.md)
+To get started with as a new Studio Tenant, developer needs to setup new account by [Tenant Registration](?path=docs/getting-started/setup-tenant/register-tenant.md)
 
 
 ## Code Tenant
