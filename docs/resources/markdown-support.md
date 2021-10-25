@@ -165,7 +165,7 @@ Underscores
 
 ## <a name="cards"/> Cards
 
-[{"title":"Title","description":"Description","link":"docs/resources/guides/api-guide.md"}]
+[{(Title)(Some Description)(docs/resources/guides/api-guide.md)}]
 
 [//]: # (These are reference links used in markdown file)
 
