@@ -10,7 +10,7 @@ Products within the Fiserv portfolio that are showcase through the Studio are kn
 For more information please refere to [Setup tenant](?path=docs/getting-started/setup-tenant/setup-tenant.md)
 
 
-## Deploying Tenant
+## Deploying a Tenant
 
 New registered Tenant must provide public tenant server.
 For more information please refer to [How to deploy tenant Server](?path=docs/getting-started/setup-tenant/deploy-tenant.md)
