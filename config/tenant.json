@@ -60,5 +60,24 @@
         "value": false
       }
   ]
-  }
+  },
+  "supportConfig": [{ 
+		"bug": {
+			"label": "bug,devStudio",
+			"template": "bug.md",
+			"assignees": "abhishek.singh3@fiserv.com"
+		},
+
+		"feedback": {
+			"label": "feedback,devStudio",
+			"template": "feedback.md",
+			"assignees": "abhishek.singh3@fiserv.com"
+		},
+
+		"enhancement": {
+			"label": "enhancement,devStudio",
+			"template": "feature.md",
+			"assignees": "abhishek.singh3@fiserv.com"
+		}
+	}]
 }
