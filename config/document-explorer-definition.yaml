@@ -63,9 +63,15 @@
       link: docs/resources/guides/how-to-use-stoplight.md
     - title: How to use Docignore
       link: docs/resources/guides/how-to-use-docignore.md
-    - title: Markdown Support
-      link: docs/resources/markdown-support.md
     - title: Tutorials
-      link: docs/tutorials/tutorials.md
+      link:
+      open: true
+      sections:
+      - title: Markdown Guide
+        link: docs/resources/markdown-support.md
+        open: true
+        sections:
+        - title: Card Support
+          link: docs/tutorials/markdown/card.md
     - title: FAQ
       link: docs/faq/faq.md
