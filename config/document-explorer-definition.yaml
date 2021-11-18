@@ -73,5 +73,7 @@
         sections:
         - title: Card Support
           link: docs/tutorials/markdown/card.md
+        - title: Tabs Support
+          link: docs/tutorials/markdown/tabs.md
     - title: FAQ
       link: docs/faq/faq.md
