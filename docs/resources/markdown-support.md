@@ -163,15 +163,6 @@ ___
 Underscores
 ```
 
-## <a name="cards"/> Cards
-
-<Card>
-<Card.Header>Card</Card.Header>
-<Card.Body><p>Information cards</p></Card.Body>
-</Card>
-
-[{"title":"Title","description":"Description","link":"some link"}]
-
 [//]: # (These are reference links used in markdown file)
 
 [Fiserv Logo]: <https://gist.githubusercontent.com/f2zdirk/0d6e1e22180086f6169a2686a3ae1ec9/raw/22c36a3fbd595844296c2d25dc0e14b27d51e1ab/Fiserv_Logo.jpg> 
