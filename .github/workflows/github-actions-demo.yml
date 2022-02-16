@@ -20,5 +20,5 @@ jobs:
           ls -la
           npm --version
           nodev=$(node --version)
-          echo "Node version installed - ${{nodev}}"
+          echo "Node version installed : " $nodev
       - run: echo "🍏 This job's status is ${{ job.status }}."
