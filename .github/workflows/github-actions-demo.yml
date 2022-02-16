@@ -20,5 +20,5 @@ jobs:
           ls -la
           npm --version
           result=$(node --version)
-      - run: echo $result    
+          echo $result    
       - run: echo "🍏 This job's status is ${{ job.status }}."
