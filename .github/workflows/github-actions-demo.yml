@@ -28,6 +28,5 @@ jobs:
           echo "🍏 Validated......"
           elif[result == *Failed*] ; then
           echo "Validator failed and exiting..."
-          exit 1
           fi
-     # - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "🍏 This job's status is ${{ job.status }}."
