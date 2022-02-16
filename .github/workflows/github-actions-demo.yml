@@ -18,4 +18,5 @@ jobs:
         run: |
           cd ${{ github.workspace }}/validator
           ls -la
+      - run: node --version  
       - run: echo "🍏 This job's status is ${{ job.status }}."
