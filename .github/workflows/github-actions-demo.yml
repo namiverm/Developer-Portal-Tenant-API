@@ -20,6 +20,5 @@ jobs:
           cd ${{ github.workspace }}/validator
           ls -la
           npm install
-          result=$(npm test)
-          echo $result 
+          npm test
       - run: echo "🍏 This job's status is ${{ job.status }}."
