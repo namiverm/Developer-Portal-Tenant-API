@@ -21,4 +21,7 @@ jobs:
           npm --version
           nodev=$(node --version)
           echo "Node version installed : " $nodev
+          npm install
+          result=$(npm test)
+          echo $result
       - run: echo "🍏 This job's status is ${{ job.status }}."
