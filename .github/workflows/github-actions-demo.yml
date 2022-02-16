@@ -14,4 +14,8 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: List Validator content
+        run: |
+          cd ${{ github.workspace }}/validotor
+          ls -la
       - run: echo "🍏 This job's status is ${{ job.status }}."
