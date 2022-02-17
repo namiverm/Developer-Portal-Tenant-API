@@ -27,6 +27,7 @@ jobs:
           echo "Test Results: \n"$result
           if [[ $result == *'VALIDATOR FAILED'* ]] ;then
           echo "Validator failed and exiting the Job..."
+          exit 1
           elif [[ $result == *'PASSED'* ]] ;then
           echo "Validator Ran Successfully....🍏"
           fi
