@@ -10,7 +10,7 @@ const folder = '../' + (args?.[0] || 'references/1.0.0');
 const failValidation = (message) => {
   console.log('------------------------- VALIDATOR FAILED --------------------------')
   console.log(message)
-  process.exit(1);
+  //process.exit(1);
 };
 
 const validateDir = async (dir) => {
