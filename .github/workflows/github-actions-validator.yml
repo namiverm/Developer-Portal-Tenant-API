@@ -27,7 +27,8 @@ jobs:
           echo "Test Results: \n"$result
           if [[ $result == *'VALIDATOR FAILED'* ]] ;then
           echo "Validator failed and exiting the Job..."
-          exit 1
+          script: |
+            core.setFailed('Coverage test below tolerance')
           elif [[ $result == *'PASSED'* ]] ;then
           echo "Validator Ran Successfully....🍏"
           fi
