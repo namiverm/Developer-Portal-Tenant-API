@@ -25,9 +25,9 @@ jobs:
           npm install
           result=$(npm test)
           echo "Test Results: \n"$result
-          if [[ $result == *'PASSED'* ]] ;then
-          echo "Validator Ran Successfully....🍏."
-          elif [[ $result == *'Failed'* ]] ;then 
-          echo "Validator failed and exiting the Job....."
+          if [[ $result == *'VALIDATOR FAILED'* ]] ;then
+          echo "Validator failed and exiting the Job..."
+          elif [[ $result == *'PASSED'* ]] ;then
+          echo "Validator Ran Successfully....🍏"
           fi
       - run: echo "🍏 This job's status is ${{ job.status }}."
