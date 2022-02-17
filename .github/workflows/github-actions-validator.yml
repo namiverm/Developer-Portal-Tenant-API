@@ -24,7 +24,7 @@ jobs:
           echo "Node version installed : " $nodev
           npm install
           result=$(npm test)
-          echo $result
+          echo "Test Results: \n"$result
           if [[ $result == *'PASSED'* ]] ;then
           echo "Validator Ran Successfully....🍏."
           elif [[ $result == *'Failed'* ]] ;then 
