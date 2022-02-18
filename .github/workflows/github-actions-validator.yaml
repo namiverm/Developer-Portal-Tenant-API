@@ -18,7 +18,7 @@ jobs:
           ls ${{ github.workspace }}
       - name: Running Validator.....
         run: |
-          cd ${{ github.workspace }}/validator
+          cd Fiserv/Test-repo/validator
           ls -la
           npmv=$(npm --version)
           echo "NPM version installed : " $npmv
