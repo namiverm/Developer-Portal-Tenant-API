@@ -18,7 +18,7 @@ jobs:
      #    ls Fiserv/Test-repo
       - name: Running Validator.....
         run: | 
-          cd Fiserv/Test-repo/validator
+          cd validator
           echo pwd
           ls -la
           npmv=$(npm --version)
