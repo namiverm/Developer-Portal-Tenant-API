@@ -26,7 +26,7 @@ jobs:
           nodev=$(node --version)
           echo "Node version installed : " $nodev
           npm install
-          result=$(npm test ${{ github.repository }}/reference)
+          result=$(npm test ${{ github.repository }})
           echo "Test Results: \n"$result
           if [[ $result == *'VALIDATOR FAILED'* ]] ;then
           echo "Validator failed and exiting the Job..."
