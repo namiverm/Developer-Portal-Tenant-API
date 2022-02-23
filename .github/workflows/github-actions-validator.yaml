@@ -18,10 +18,10 @@ jobs:
      #    ls Fiserv/Test-repo
       - name: Running Validator.....
         run: |
-          echo "workingdirec : " $GITHUB_WORKSPACE
           pwd
           cd validator
           ls -la
+          echo "workingdirec : " $GITHUB_WORKSPACE
           npmv=$(npm --version)
           echo "NPM version installed : " $npmv
           nodev=$(node --version)
