@@ -12,6 +12,7 @@ jobs:
         with:
          repository: Fiserv/Test-repo
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "💡 The Fiserv/Test-repo repository has been cloned to the runner."
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
      # - name: List files in the repository
      #   run: |
@@ -27,7 +28,7 @@ jobs:
           echo "Node version installed : " $nodev
           npm install
           echo " Repo: ${{ github.repository }}"
-          result=$(npm test ${{ github.repository }})
+          result=$(npm test ${github.repository})
           echo "Test Results: \n"$result
           if [[ $result == *'VALIDATOR FAILED'* ]] ;then
           echo "Validator failed and exiting the Job..."
