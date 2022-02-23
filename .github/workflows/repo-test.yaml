@@ -16,9 +16,11 @@ jobs:
         pwd
         ls -la
     - name: Check out repository code
-      uses: actions/checkout@v2
-      with:
-       repository: Fiserv/Test-repo
+      run: |
+        working-directory: Test-repo
+        uses: actions/checkout@v2
+        with:
+        repository: Fiserv/Test-repo
     - name: List files in the repository
       run: |
        pwd
