@@ -15,7 +15,7 @@ jobs:
         cd Test-repo
         pwd
         ls -la
-      working-directory: Test-repo
+      #working-directory: Test-repo
     - name: Check out repository code
       uses: actions/checkout@v2
       with:
