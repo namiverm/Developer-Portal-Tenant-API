@@ -21,13 +21,13 @@ jobs:
           pwd
           cd validator
           ls -la
-          echo "workingdirec : " $GITHUB_WORKSPACE
           npmv=$(npm --version)
           echo "NPM version installed : " $npmv
           nodev=$(node --version)
           echo "Node version installed : " $nodev
           npm install
           echo " Repo: ${{ github.repository }}"
+          echo " space: ${{ GITHUB_WORKSPACE }}"
           result=$(npm test ${{GITHUB_WORKSPACE }})
           echo "Test Results: \n"$result
           if [[ $result == *'VALIDATOR FAILED'* ]] ;then
