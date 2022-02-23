@@ -1,8 +1,5 @@
 name: cd
-
-on:
-  push:
-    branches: '*'
+on: [push]
 
 jobs:
   build:
@@ -14,7 +11,15 @@ jobs:
       run: |
         pwd
         ls -la
-        mkdir hello
-        cd hello
+        mkdir Test-repo
+        cd Test-repo
         pwd
         ls -la
+    - name: Check out repository code
+      uses: actions/checkout@v2
+      with:
+       repository: Fiserv/Test-repo
+    - name: List files in the repository
+      run: |
+       pwd
+       ls -la
