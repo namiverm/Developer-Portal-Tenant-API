@@ -27,8 +27,8 @@ jobs:
           echo "Node version installed : " $nodev
           npm install
           echo " Repo: ${{ github.repository }}"
-          echo " space: ${{ github.workspace }}"
-          result=$(npm test ${{github.repository }})
+          echo " Space: ${{ github.workspace }}"
+          result=$(npm test ${{github.workspace }})
           echo "Test Results: \n"$result
           if [[ $result == *'VALIDATOR FAILED'* ]] ;then
           echo "Validator failed and exiting the Job..."
