@@ -1,4 +1,4 @@
-name: cd
+name: switching repos
 on: [push]
 
 jobs:
@@ -15,11 +15,10 @@ jobs:
         cd Test-repo
         pwd
         ls -la
+      working-directory: Test-repo
     - name: Check out repository code
-      run: |
-        working-directory: Test-repo
-        uses: actions/checkout@v2
-        with:
+      uses: actions/checkout@v2
+      with:
         repository: Fiserv/Test-repo
     - name: List files in the repository
       run: |
