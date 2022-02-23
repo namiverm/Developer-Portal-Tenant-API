@@ -1,5 +1,11 @@
 name: GitHub Actions Validator
-on: [push]
+on:
+  # Triggers the workflow on push or pull request events but only for the dev , stage and main branch
+  push:
+    branches: [ dev,stage,main ]
+  pull_request:
+    branches: [ dev,stage,main ]
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
