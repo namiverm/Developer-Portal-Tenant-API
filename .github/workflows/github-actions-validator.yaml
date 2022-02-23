@@ -18,7 +18,7 @@ jobs:
      #    ls Fiserv/Test-repo
       - name: Running Validator.....
         run: |
-          wrkspce = $(pwd)
+          pwd
           cd validator
           ls -la
           npmv=$(npm --version)
@@ -28,7 +28,7 @@ jobs:
           npm install
           echo " Repo: ${{ github.repository }}"
           echo " space: ${{ github.workspace }}"
-          result=$(npm test ${{wrkspce }})
+          result=$(npm test ${{github.repository }})
           echo "Test Results: \n"$result
           if [[ $result == *'VALIDATOR FAILED'* ]] ;then
           echo "Validator failed and exiting the Job..."
