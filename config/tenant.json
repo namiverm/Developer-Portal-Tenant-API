@@ -33,7 +33,6 @@
         "AccountsAndTransactions/AcctHoldService",
         "AccountsAndTransactions/AcctService",
         "AccountsAndTransactions/AcctTrnService",
-        "AccountsAndTransactions/CollateralService",
         "AccountsAndTransactions/DocumentService",
         "AccountsAndTransactions/MultiAccountService",
         "AccountsAndTransactions/SafeDepositBoxService",
