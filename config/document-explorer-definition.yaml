@@ -44,7 +44,7 @@
       link: docs/getting-started/setup-tenant/setup-tenant.md
     - title: Deploy Tenant
       link: docs/getting-started/setup-tenant/deploy-tenant.md
-    - title: Register Tenant Test Tenant
+    - title: Register Tenant
       link: docs/getting-started/setup-tenant/register-tenant.md
     - title: Code a Tenant
       link: docs/getting-started/code-a-tenant/code-tenant.md
@@ -75,7 +75,5 @@
           link: docs/tutorials/markdown/card.md
         - title: Tabs Support
           link: docs/tutorials/markdown/tabs.md
-        - title: Test Report
-          link: docs/tutorials/markdown/ta.md
     - title: FAQ
       link: docs/faq/faq.md
