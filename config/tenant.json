@@ -76,17 +76,17 @@
       "bug": {
         "label": "bug,devStudio",
         "template": "bug.md",
-        "assignees": ""
+        "assignees": "f2zdirk"
       },
       "feedback": {
         "label": "feedback,devStudio",
         "template": "feedback.md",
-        "assignees": ""
+        "assignees": "f2zdirk"
       },
       "enhancement": {
         "label": "enhancement,devStudio",
         "template": "feature.md",
-        "assignees": ""
+        "assignees": "f2zdirk"
       }
     }
   ]
