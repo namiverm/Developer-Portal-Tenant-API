@@ -64,7 +64,7 @@
     - title: How to use Docignore
       link: docs/resources/guides/how-to-use-docignore.md
     - title: Tutorials
-      link:
+      link: docs/resources/guides/how-to-use-docignore.md
       open: true
       sections:
       - title: Markdown Guide
