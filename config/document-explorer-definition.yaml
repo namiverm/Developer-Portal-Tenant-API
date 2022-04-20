@@ -46,7 +46,7 @@
       link: docs/getting-started/setup-tenant/deploy-tenant.md
     - title: Register Tenant
       link: docs/getting-started/setup-tenant/register-tenant.md
-    - title: Code a Tenant
+    - title: Code your Tenant
       link: docs/getting-started/code-a-tenant/code-tenant.md
     - title: Preview & Publish
       link: docs/getting-started/preview-and-publish-content/preview-and-publish.md
