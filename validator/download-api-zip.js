@@ -8,7 +8,7 @@ const args = process.argv.slice(2);
 const folder = '../' + (args?.[0] || 'references/1.0.0');
 let zip = new AdmZip(); 
 const failValidation = (message) => {
-  console.log('------------------------- YMAL VALIDATOR / GENERARTOR FAILED --------------------------')
+  console.log('------------------------- YAML VALIDATOR / GENERARTOR FAILED --------------------------')
   console.log(message)
 };
 //const  downloadZiipFile = `tenant`;

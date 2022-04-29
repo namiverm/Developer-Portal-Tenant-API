@@ -1,4 +1,4 @@
-name: GitHub Actions Validator
+name: GitHub YAML/Postman Zip Actions
 on:
   # Triggers the workflow on push or pull request events but only for the dev , stage and main branch
   push:
@@ -46,7 +46,8 @@ jobs:
           echo " Space: ${{ github.workspace }}"
           result=$(npm test ${{github.workspace }})
           echo "Test Results: \n"$result
-          if [[ $result == *'VALIDATOR FAILED'* ]] ;then
+          ls -la
+          if [[ $result == *'YAML VALIDATOR / GENERARTOR FAILED'* ]] ;then
           echo "Validator failed and exiting the Job..."
           exit 1
           elif [[ $result == *'PASSED'* ]] ;then
