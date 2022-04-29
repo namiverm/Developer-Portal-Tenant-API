@@ -40,13 +40,13 @@
     link: docs/getting-started.md
     open: true
     sections:
-    - title: Setup a Tenant
+    - title: Setup your Tenant
       link: docs/getting-started/setup-tenant/setup-tenant.md
     - title: Deploy Tenant
       link: docs/getting-started/setup-tenant/deploy-tenant.md
     - title: Register Tenant
       link: docs/getting-started/setup-tenant/register-tenant.md
-    - title: Code a Tenant
+    - title: Code your Tenant
       link: docs/getting-started/code-a-tenant/code-tenant.md
     - title: Preview & Publish
       link: docs/getting-started/preview-and-publish-content/preview-and-publish.md
@@ -58,13 +58,13 @@
     - title: API Guide
       link: docs/resources/guides/api-guide.md
     - title: How it works
-      link: docs/resources/guides/how-it-works.md
+      link: docs/resources/guides/how-to-use-stoplight.md
     - title: How to use Stoplight
       link: docs/resources/guides/how-to-use-stoplight.md
     - title: How to use Docignore
       link: docs/resources/guides/how-to-use-docignore.md
     - title: Tutorials
-      link:
+      link: docs/resources/guides/how-to-use-docignore.md
       open: true
       sections:
       - title: Markdown Guide
