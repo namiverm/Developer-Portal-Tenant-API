@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node yaml.js reference"
+    "test": "node download-api-zip.js reference"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@apidevtools/swagger-parser": "^10.0.3",
-    "js-yaml": "^4.1.0"
+    "adm-zip": "^0.5.9",
+    "file-saver": "^2.0.5",
+    "js-yaml": "^4.1.0",
+    "jszip": "^3.9.1"
   }
 }
