@@ -16,7 +16,7 @@ const generateZipCollection = async (dir) => {
   fs.readdir(dir, { withFileTypes: true }, (err, files) => {
     files.forEach(async file => { 
       if (file.isDirectory()) {
-        downloadZip1(`${dir}/${file.name}`);
+        generateZipCollection(`${dir}/${file.name}`);
       } else if (/\.yaml$/.test(file.name)){
 
         try {
