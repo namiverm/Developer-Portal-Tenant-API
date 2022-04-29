@@ -11,7 +11,7 @@ const failValidation = (message) => {
   console.log('------------------------- YMAL VALIDATOR / GENERARTOR FAILED --------------------------')
   console.log(message)
 };
-const  downloadZiipFile = `tenant`;
+//const  downloadZiipFile = `tenant`;
 let downloadFile; 
 
 const generateZipCollection = async (dir) => { 
@@ -30,7 +30,7 @@ const generateZipCollection = async (dir) => {
           const parsedData = await SwaggerParser.validate(apiJson);
           if (parsedData){ 
               const folder = dir.replace('../reference/','');
-             console.log(`dir ---${ dir.replace('../reference/','')}`); 
+             console.log(`Directory accessed ---${ dir.replace('../reference/','')}`); 
       
             if (folder === '../reference'){
                zip.addFile(file.name, Buffer.from(content, "utf8"), "entry comment goes here"); 
@@ -39,16 +39,15 @@ const generateZipCollection = async (dir) => {
                zip.addFile(`${folder}/${file.name}`, Buffer.from(content, "utf8"), "entry comment goes here");  
             }  
              downloadFile = 'tennat_${apiVersion}_spec';   
-            
-            zip.writeZip(`${downloadFile}.zip`);
-            //console.log(`Specs File downloaded ... ${downloadFile}`); 
+             await zip.writeZip(`${downloadFile}.zip`); 
+             console.log(`File downloaded ---${file.name}`); 
           } 
         } catch (e) {
           failValidation(e.message);
         }
       }
     });  
-    console.log(`Final download completed---${downloadFile}`); 
+ 
   }); 
 };
 
