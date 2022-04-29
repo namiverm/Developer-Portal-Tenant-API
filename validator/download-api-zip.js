@@ -40,15 +40,16 @@ const generateZipCollection = async (dir) => {
             }  
              downloadFile = 'tennat_${apiVersion}_spec';   
             
-            zip.writeZip(`${downloadZiipFile}.zip`);
-            console.log(`File download ---${downloadFile}`); 
+            zip.writeZip(`${downloadFile}.zip`);
+            //console.log(`Specs File downloaded ... ${downloadFile}`); 
           } 
         } catch (e) {
           failValidation(e.message);
         }
       }
     });  
-  });
+    console.log(`Final download completed---${downloadFile}`); 
+  }); 
 };
 
 
