@@ -54,3 +54,7 @@ jobs:
           echo "Validator Ran Successfully....🍏"
           fi
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Show file content
+        run: |
+        pwd
+        ls -la
