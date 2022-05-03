@@ -56,5 +56,5 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Show file content
         run: |
-        pwd
-        ls -la
+          pwd
+          ls -la
