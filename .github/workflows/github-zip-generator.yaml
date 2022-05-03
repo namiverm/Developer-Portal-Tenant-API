@@ -58,3 +58,5 @@ jobs:
         run: |
           pwd
           ls -la
+        push: true 
+      - name: Commiting changes into remote github
