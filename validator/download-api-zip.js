@@ -38,7 +38,7 @@ const generateZipCollection = async (dir) => {
             else {
                zip.addFile(`${folder}/${file.name}`, Buffer.from(content, "utf8"), "entry comment goes here");  
             }  
-             downloadFile = 'tennat_${apiVersion}_spec';   
+             downloadFile = 'tennat_spec';   
              await zip.writeZip(`${downloadFile}.zip`); 
              console.log(`File downloaded ---${file.name}`); 
           } 
