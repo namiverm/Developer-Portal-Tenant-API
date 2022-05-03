@@ -1,4 +1,4 @@
-name: GitHub Actions Validator
+name: GitHub Remote action
 on:
   # Triggers the workflow on push or pull request events but only for the dev , stage and main branch
   push:
