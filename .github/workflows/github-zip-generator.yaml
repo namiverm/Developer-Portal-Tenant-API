@@ -58,7 +58,7 @@ jobs:
         run: |
           pwd
           ls -la
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - name: Push changes to remote
+      - uses: EndBug/add-and-commit@v9
         with:
-        branch: ${{ github.repository }}
+        push: true
