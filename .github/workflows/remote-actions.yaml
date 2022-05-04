@@ -13,10 +13,10 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}." 
-      - name: Creating new temp dir called Tenant
+      - name: Creating new temp dir called tools
         run: |
-         mkdir -m 777 tenant
-         cd tenant
+         mkdir -m 777 tools
+         cd tools
          pwd
          ls -la
       - name: Check out repository code
@@ -24,12 +24,12 @@ jobs:
         with:
          repository: Fiserv/remote-actions
          ref: develop
-         path: ${{ github.workspace }}
+         path: ${{ github.workspace }}/tools
       - name: Check out repository code
         uses: actions/checkout@v2
         with:
          repository: ${{ github.repository }}
-         path: ${{ github.workspace }}/tenant
+         path: ${{ github.workspace }}
       - name: List files in the repository
         run: |
          cd ${{ github.workspace }}
