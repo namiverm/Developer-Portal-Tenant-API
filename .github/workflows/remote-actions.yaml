@@ -15,8 +15,8 @@ jobs:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}." 
       - name: Creating new temp dir called Tenant
         run: |
-         mkdir -m 777 tenant
-         cd tenant
+         mkdir -m 777 tools
+         cd tools
          pwd
          ls -la
       - name: Check out repository code
@@ -24,30 +24,24 @@ jobs:
         with:
          repository: Fiserv/remote-actions
          ref: develop
-         path: ${{ github.workspace }}
+         path: ${{ github.workspace }}/tools
       - name: Check out repository code
         uses: actions/checkout@v2
         with:
          repository: ${{ github.repository }}
-         path: ${{ github.workspace }}/tenant
+         path: ${{ github.workspace }}
       - name: List files in the repository
         run: |
          cd ${{ github.workspace }}
          pwd
          ls -la
-         cd ${{ github.workspace }}/tenant
-         pwd
-         ls -la
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the tenant directory"
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
-        run: |
+         cd ${{ github.workspace }}/tools
          pwd
          ls -la
       - name: Running YAML/Postman Zip Generator.....
         run: |
           pwd
-          cd ${{ github.workspace }}/scripts
+          cd ${{ github.workspace }}/tools/scripts
           ls -la
           npmv=$(npm --version)
           echo "NPM version installed : " $npmv
@@ -56,8 +50,12 @@ jobs:
           npm install
           echo " Repo: ${{ github.repository }}"
           echo " Space: ${{ github.workspace }}"
-          result=$(npm run download ${{github.workspace }}/tenant/reference)
+          result=$(npm run download ${{github.workspace }}/reference)
           echo "Test Results: \n"$result
+          ls -la
+          rm -rvf tools
+          echo "After removing tools dir"
+          pwd
           ls -la
           if [[ $result == *'YAML VALIDATOR / GENERARTOR FAILED'* ]] ;then
           echo "Validator failed and exiting the Job..."
