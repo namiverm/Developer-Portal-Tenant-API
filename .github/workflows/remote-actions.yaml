@@ -35,7 +35,7 @@ jobs:
          cd ${{ github.workspace }}
          pwd
          ls -la
-         cd ${{ github.workspace }}/tenant
+         cd ${{ github.workspace }}/tools
          pwd
          ls -la
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the tenant directory"
