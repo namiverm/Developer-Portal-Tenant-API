@@ -12,12 +12,18 @@ jobs:
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}." 
+      - name: Creating new temp dir called Tenant
+        run: |
+         mkdir -m 777 tenant
+         cd tenant
+         pwd
+         ls -la
       - name: Check out repository code
         uses: actions/checkout@v2
         with:
-         repository: Fiserv/Test-repo
-         ref: remote-action-flow
+         repository: Fiserv/remote-action
+         ref: develop
       - name: List files in the repository
         run: |
          pwd
