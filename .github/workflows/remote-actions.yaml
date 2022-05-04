@@ -38,3 +38,37 @@ jobs:
          cd ${{ github.workspace }}/tenant
          pwd
          ls -la
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the tenant directory"
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      - name: List files in the repository
+        run: |
+         pwd
+         ls -la
+      - name: Running YAML/Postman Zip Generator.....
+        run: |
+          pwd
+          cd ${{ github.workspace }}/scripts
+          ls -la
+          npmv=$(npm --version)
+          echo "NPM version installed : " $npmv
+          nodev=$(node --version)
+          echo "Node version installed : " $nodev
+          npm install
+          echo " Repo: ${{ github.repository }}"
+          echo " Space: ${{ github.workspace }}"
+          result=$(npm run download ${{github.workspace }}/tenant/reference)
+          echo "Test Results: \n"$result
+          ls -la
+          if [[ $result == *'YAML VALIDATOR / GENERARTOR FAILED'* ]] ;then
+          echo "Validator failed and exiting the Job..."
+          exit 1
+          elif [[ $result == *'PASSED'* ]] ;then
+          echo "Validator Ran Successfully....🍏"
+          fi
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Show file content
+        run: |
+          pwd
+          ls -la
+      - name: Commite changes from action runner to remote branch
+        uses: stefanzweifel/git-auto-commit-action@v4
