@@ -13,10 +13,10 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}." 
-      - name: Creating new temp dir called tools
+      - name: Creating new temp dir called Tenant
         run: |
-         mkdir -m 777 tools
-         cd tools
+         mkdir -m 777 tenant
+         cd tenant
          pwd
          ls -la
       - name: Check out repository code
@@ -24,18 +24,18 @@ jobs:
         with:
          repository: Fiserv/remote-actions
          ref: develop
-         path: ${{ github.workspace }}/tools
+         path: ${{ github.workspace }}
       - name: Check out repository code
         uses: actions/checkout@v2
         with:
          repository: ${{ github.repository }}
-         path: ${{ github.workspace }}
+         path: ${{ github.workspace }}/tenant
       - name: List files in the repository
         run: |
          cd ${{ github.workspace }}
          pwd
          ls -la
-         cd ${{ github.workspace }}/tools
+         cd ${{ github.workspace }}/tenant
          pwd
          ls -la
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the tenant directory"
@@ -47,7 +47,7 @@ jobs:
       - name: Running YAML/Postman Zip Generator.....
         run: |
           pwd
-          cd ${{ github.workspace }}/tools/scripts
+          cd ${{ github.workspace }}/scripts
           ls -la
           npmv=$(npm --version)
           echo "NPM version installed : " $npmv
@@ -59,7 +59,7 @@ jobs:
           result=$(npm run download ${{github.workspace }}/tenant/reference)
           echo "Test Results: \n"$result
           ls -la
-          if [[ $result == *'YAML VALIDATOR / GENERATOR FAILED'* ]] ;then
+          if [[ $result == *'YAML VALIDATOR / GENERARTOR FAILED'* ]] ;then
           echo "Validator failed and exiting the Job..."
           exit 1
           elif [[ $result == *'PASSED'* ]] ;then
