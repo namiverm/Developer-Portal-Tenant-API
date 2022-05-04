@@ -16,7 +16,8 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
         with:
-         repository: Fiserv/Test-repo
+         repository: Fiserv/remote-actions
+         ref: develop
       - name: List files in the repository
         run: |
          pwd
