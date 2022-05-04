@@ -13,18 +13,18 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}." 
-      - name: Creating new temp dir called tools
+      - name: Creating new temp sub dir called `tools`
         run: |
          mkdir -m 777 tools
          cd tools
          pwd
          ls -la
-      - name: Check out ${{ github.repository }} Repo code
+      - name: Check out ${{ github.repository }} Repo code at ${{ github.workspace }}
         uses: actions/checkout@v2
         with:
          repository: ${{ github.repository }}
          path: ${{ github.workspace }}
-      - name: Check out Fiserv/remote-actions Repo code
+      - name: Check out Fiserv/remote-actions Repo code at ${{ github.workspace }}/tools
         uses: actions/checkout@v2
         with:
          repository: Fiserv/remote-actions
@@ -44,31 +44,34 @@ jobs:
         run: |
          pwd
          ls -la
-      # - name: Running YAML/Postman Zip Generator.....
-      #   run: |
-      #     pwd
-      #     cd ${{ github.workspace }}/scripts
-      #     ls -la
-      #     npmv=$(npm --version)
-      #     echo "NPM version installed : " $npmv
-      #     nodev=$(node --version)
-      #     echo "Node version installed : " $nodev
-      #     npm install
-      #     echo " Repo: ${{ github.repository }}"
-      #     echo " Space: ${{ github.workspace }}"
-      #     result=$(npm run download ${{github.workspace }}/tenant/reference)
-      #     echo "Test Results: \n"$result
-      #     ls -la
-      #     if [[ $result == *'YAML VALIDATOR / GENERARTOR FAILED'* ]] ;then
-      #     echo "Validator failed and exiting the Job..."
-      #     exit 1
-      #     elif [[ $result == *'PASSED'* ]] ;then
-      #     echo "Validator Ran Successfully....🍏"
-      #     fi
-      # - run: echo "🍏 This job's status is ${{ job.status }}."
-      # - name: Show file content
-      #   run: |
-      #     pwd
-      #     ls -la
-      # # - name: Commite changes from action runner to remote branch
-      # #   uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Running YAML/Postman Zip Generator.....
+        run: |
+          pwd
+          cd ${{ github.workspace }}/tools/scripts
+          ls -la
+          npmv=$(npm --version)
+          echo "NPM version installed : " $npmv
+          nodev=$(node --version)
+          echo "Node version installed : " $nodev
+          npm install
+          echo " Repo: ${{ github.repository }}"
+          echo " Space: ${{ github.workspace }}"
+          result=$(npm run download ${{github.workspace }}/reference)
+          echo "Test Results: \n"$result
+          pwd
+          ls -la
+          rm -rf ${{github.workspace }}/tools
+          echo "Temp tools directory deleted ......"
+          if [[ $result == *'YAML VALIDATOR / GENERARTOR FAILED'* ]] ;then
+          echo "Validator failed and exiting the Job..."
+          exit 1
+          elif [[ $result == *'PASSED'* ]] ;then
+          echo "Validator Ran Successfully....🍏"
+          fi
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Show file content
+        run: |
+          pwd
+          ls -la
+      - name: Commited changes from action runner to remote branch
+        uses: stefanzweifel/git-auto-commit-action@v4
