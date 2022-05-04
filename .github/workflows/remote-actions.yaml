@@ -13,7 +13,7 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}." 
-      - name: Creating new temp dir called Tenant
+      - name: Creating new temp dir called tools
         run: |
          mkdir -m 777 tools
          cd tools
@@ -32,12 +32,12 @@ jobs:
          path: ${{ github.workspace }}
       - name: List files in the repository
         run: |
-         cd ${{ github.workspace }}
-         pwd
-         ls -la
-         cd ${{ github.workspace }}/tools
-         pwd
-         ls -la
+          cd ${{ github.workspace }}
+          pwd
+          ls -la
+          cd ${{ github.workspace }}/tools
+          pwd
+          ls -la
       - name: Running YAML/Postman Zip Generator.....
         run: |
           pwd
@@ -54,7 +54,7 @@ jobs:
           echo "Test Results: \n"$result
           ls -la
           rm -rvf tools
-          echo "After removing tools dir"
+          echo "After removing tools"
           pwd
           ls -la
           if [[ $result == *'YAML VALIDATOR / GENERARTOR FAILED'* ]] ;then
