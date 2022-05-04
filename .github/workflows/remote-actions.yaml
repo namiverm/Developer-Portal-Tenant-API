@@ -19,17 +19,17 @@ jobs:
          cd tenant
          pwd
          ls -la
-      - name: Check out repository code
+      - name: Check out Fiserv/remote-actions code
         uses: actions/checkout@v2
         with:
          repository: Fiserv/remote-actions
          ref: develop
-         path: ${{ github.workspace }}
-      - name: Check out repository code
+         path: ${{ github.workspace }}/tenant
+      - name: Check out ${{ github.repository }} code
         uses: actions/checkout@v2
         with:
          repository: ${{ github.repository }}
-         path: ${{ github.workspace }}/tenant
+         path: ${{ github.workspace }}
       - name: List files in the repository
         run: |
          cd ${{ github.workspace }}
