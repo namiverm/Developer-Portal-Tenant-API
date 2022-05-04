@@ -28,7 +28,8 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
         with:
-         repository: ${{ github.repository }}/tenant  
+         repository: ${{ github.repository }}
+         path: ${{ github.workspace }}/tenant
       - name: List files in the repository
         run: |
          cd ${{ github.workspace }}
