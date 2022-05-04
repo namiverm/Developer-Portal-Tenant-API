@@ -56,7 +56,7 @@ jobs:
           npm install
           echo " Repo: ${{ github.repository }}"
           echo " Space: ${{ github.workspace }}"
-          result=$(npm run download ${{github.workspace }}/reference)
+          result=$(npm run download ${{github.workspace }})
           echo "Test Results: \n"$result
           pwd
           ls -la
