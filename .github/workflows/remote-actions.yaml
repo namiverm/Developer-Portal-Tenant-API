@@ -24,6 +24,7 @@ jobs:
         with:
          repository: Fiserv/remote-actions
          ref: develop
+         path: ${{ github.workspace }}/tenant
       - name: List files in the repository
         run: |
          pwd
