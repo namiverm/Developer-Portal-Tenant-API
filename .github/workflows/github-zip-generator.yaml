@@ -5,10 +5,10 @@ on:
     branches: [ develop,stage,main ]
     paths:
       - 'reference/**'
-  pull_request:
-    branches: [ develop,stage,main ]
-    paths:
-      - 'reference/**'    
+  # pull_request:
+  #   branches: [ develop,stage,main ]
+  #   paths:
+  #     - 'reference/**'    
 
 jobs:
   Explore-GitHub-Actions:
