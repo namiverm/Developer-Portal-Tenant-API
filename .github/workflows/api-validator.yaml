@@ -1,6 +1,6 @@
 name: API Specs Validator Action
 on:
-  # Triggers the workflow on push or pull request events but only for the dev , stage and main branch
+  # Triggers the workflow on push or pull request events but only for the develop , stage and main branch
   push:
     branches: [ develop,stage,main ]
   pull_request:
