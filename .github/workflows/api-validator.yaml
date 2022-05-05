@@ -8,4 +8,4 @@ on:
 
 jobs:
   call-yaml:
-      - uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
+    uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
