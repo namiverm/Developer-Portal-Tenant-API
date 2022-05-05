@@ -8,6 +8,4 @@ on:
 
 jobs:
   call-yaml:
-    runs-on: ubuntu-latest
-    steps:
       - uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
