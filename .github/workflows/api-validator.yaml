@@ -1,0 +1,13 @@
+name: API Specs Validator Action
+on:
+  # Triggers the workflow on push or pull request events but only for the dev , stage and main branch
+  push:
+    branches: [ develop,stage,main ]
+  pull_request:
+    branches: [ develop,stage,main ]
+
+jobs:
+  call-yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml
