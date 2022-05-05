@@ -44,7 +44,7 @@ jobs:
         run: |
          pwd
          ls -la
-      - name: Running API Validator.....
+      - name: Running API Specs Validator.....
         run: |
           pwd
           cd ${{ github.workspace }}/tools/scripts
