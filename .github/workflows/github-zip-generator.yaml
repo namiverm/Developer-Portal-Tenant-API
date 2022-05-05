@@ -1,4 +1,4 @@
-name: GitHub YAML/Postman Zip Actions
+name: ZIP Generator Action
 on:
   # Triggers the workflow on push or pull request events but only for the dev , stage and main branch
   push:
@@ -12,28 +12,33 @@ jobs:
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}." 
+      - name: Creating new temp sub dir called `tools`
+        run: |
+         mkdir -m 777 tools
+         cd tools
+         pwd
+         ls -la
+      - name: Check out ${{ github.repository }} Repo code at ${{ github.workspace }}
+        uses: actions/checkout@v2
+        with:
+         repository: ${{ github.repository }}
+         path: ${{ github.workspace }}
+      - name: Check out Fiserv/remote-actions Repo code at ${{ github.workspace }}/tools
         uses: actions/checkout@v2
         with:
          repository: Fiserv/remote-actions
          ref: develop
+         path: ${{ github.workspace }}/tools
       - name: List files in the repository
         run: |
+         cd ${{ github.workspace }}
          pwd
          ls -la
-      - run: echo "💡 The Fiserv/remote-actions repository has been cloned to the runner."
-      - name: Creating new temp dir called Tenant
-        run: |
-         mkdir -m 777 tenant
-         cd tenant
+         cd ${{ github.workspace }}/tools
          pwd
          ls -la
-      - name: Check out repository code
-        uses: actions/checkout@v2
-        with:
-         repository: ${{ github.repository }}
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned on root"
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
@@ -42,7 +47,7 @@ jobs:
       - name: Running YAML/Postman Zip Generator.....
         run: |
           pwd
-          cd validator
+          cd ${{ github.workspace }}/tools/scripts
           ls -la
           npmv=$(npm --version)
           echo "NPM version installed : " $npmv
@@ -53,7 +58,10 @@ jobs:
           echo " Space: ${{ github.workspace }}"
           result=$(npm run download ${{github.workspace }})
           echo "Test Results: \n"$result
+          pwd
           ls -la
+          rm -rf ${{github.workspace }}/tools
+          echo "Temp tools directory deleted ......"
           if [[ $result == *'YAML VALIDATOR / GENERARTOR FAILED'* ]] ;then
           echo "Validator failed and exiting the Job..."
           exit 1
@@ -65,5 +73,5 @@ jobs:
         run: |
           pwd
           ls -la
-      - name: Commite changes from action runner to remote branch
+      - name: Commited changes from action runner to remote branch
         uses: stefanzweifel/git-auto-commit-action@v4
