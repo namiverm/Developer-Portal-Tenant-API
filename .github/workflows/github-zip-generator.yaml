@@ -1,4 +1,4 @@
-name: ZIP Generator Action
+name: API Specs ZIP Generator Action
 on:
   # Triggers the workflow on push or pull request events but only for the dev , stage and main branch
   push:
@@ -48,7 +48,7 @@ jobs:
         run: |
          pwd
          ls -la
-      - name: Running YAML/Postman Zip Generator.....
+      - name: Running API Specs ZIP Generator.....
         run: |
           pwd
           cd ${{ github.workspace }}/tools/scripts
