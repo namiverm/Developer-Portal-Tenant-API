@@ -8,6 +8,4 @@ on:
 
 jobs:
   call-yaml-validator-from-remote-action:
-    uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
-  call-zip-generator-from-remote-action:
-    uses: Fiserv/remote-actions/.github/workflows/github-zip-generator.yaml@develop    
+    uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop  
