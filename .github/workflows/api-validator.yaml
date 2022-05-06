@@ -1,10 +1,10 @@
-name: Studio-Teanant Actions
+name: Studio-Teanant Action
 on:
   # Triggers the workflow on push or pull request events but only for the develop , stage and main branch
   push:
     branches: [ develop,stage,main ]
-  pull_request:
-    branches: [ develop,stage,main ]
+    paths:
+      - 'reference/**'
 
 jobs:
   call-yaml-validator-from-remote-action:
