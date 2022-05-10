@@ -9,8 +9,6 @@ on:
 
 jobs:
   remote-call:
-    with:
-      super_secret: ${{ secrets.API_VALIDATOR_ACTION }}
     uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
 # jobs:
 #   Explore-GitHub-Actions:
