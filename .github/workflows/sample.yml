@@ -25,17 +25,17 @@ jobs:
   myjob:
     runs-on: self-hosted
     env:
-      env_var: ${{secrets.API_VALIDATOR_ACTION}}
+      env_var: some-value
     steps:
       - name: step1
         shell: bash
         id: first_step
         run: |
-          TOKEN1=${{secrets.API_VALIDATOR_ACTION}}
+          TOKEN1=some_value
           echo "::add-mask::$TOKEN1"
           echo "::set-output name=some-token::$TOKEN1"
           
       - name: step2
         uses: some-reusable-action
         with:
-          token: ${{steps.first_step.outputs.some-token}}        
+          token: ${{steps.first_step.outputs.some-token}}     
