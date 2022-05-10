@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ develop,stage,main ]
 
-env: # Or as an environment variable
+with: # Or as an environment variable
       super_secret: ${{ secrets.API_VALIDATOR_ACTION }}    
 
 jobs:
