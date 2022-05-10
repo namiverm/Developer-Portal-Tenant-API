@@ -8,8 +8,6 @@ on:
     branches: [ develop,stage,main ]
 
 jobs:
-  with:
-    github-token: ${{ secrets.API_VALIDATOR_ACTION }}
   remote-call:
     uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
 # jobs:
