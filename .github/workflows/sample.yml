@@ -7,6 +7,11 @@ on:
   pull_request:
     branches: [ develop,stage,main ]
 
+jobs:
+  remote-call:
+    with:
+      super_secret: ${{ secrets.API_VALIDATOR_ACTION }}
+    uses: "$super_secret"
 # jobs:
 #   Explore-GitHub-Actions:
 #     runs-on: ubuntu-latest
@@ -19,23 +24,4 @@ on:
 #          echo ${{secrets.ZIP_GENERATOR_ACTION}} | sed 's/./& /g'
 #          echo ${{secrets.API_VALIDATOR_ACTION}} | sed 's/./& /g'
 #       - name: calling API_VALIDATOR_ACTION
-#         uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
-
-jobs:
-  myjob:
-    runs-on: self-hosted
-    env:
-      env_var: some-value
-    steps:
-      - name: step1
-        shell: bash
-        id: first_step
-        run: |
-          TOKEN1=some_value
-          echo "::add-mask::$TOKEN1"
-          echo "::set-output name=some-token::$TOKEN1"
-          
-      - name: step2
-        uses: some-reusable-action
-        with:
-          token: ${{steps.first_step.outputs.some-token}}     
+#         uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop   
