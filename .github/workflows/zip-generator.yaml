@@ -8,4 +8,4 @@ on:
 
 jobs:
   call-zip-generator-from-remote-action:
-    uses: Fiserv/remote-actions/.github/workflows/github-zip-generator.yaml@develop
+    uses: ${{secrets.ZIP_GENERATOR_ACTION}}

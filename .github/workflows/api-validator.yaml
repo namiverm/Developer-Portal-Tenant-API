@@ -8,4 +8,4 @@ on:
 
 jobs:
   call-yaml-validator-from-remote-action:
-    uses: ${{secrets.YAML_REMOTE_ACTION}}
+    uses: ${{secrets.API_VALIDATOR_ACTION}}
