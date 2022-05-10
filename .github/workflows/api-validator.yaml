@@ -5,10 +5,7 @@ on:
     branches: [ develop,stage,main ]
   pull_request:
     branches: [ develop,stage,main ]
-
-with: # Or as an environment variable
-      super_secret: ${{ secrets.API_VALIDATOR_ACTION }}    
-
+   
 jobs:
   call-yaml-validator-from-remote-action:
-    uses: "$super_secret"
+    uses: "${{ secrets.API_VALIDATOR_ACTION }}"
