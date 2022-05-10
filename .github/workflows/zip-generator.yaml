@@ -7,5 +7,7 @@ on:
       - 'reference/**' 
 
 jobs:
-  call-zip-generator-from-remote-action:
-    uses: Fiserv/remote-actions/.github/workflows/github-zip-generator.yaml@develop
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The secret ${{ secrets.YAML_REMOTE_ACTION }} event."
