@@ -11,7 +11,7 @@ jobs:
   with:
     github-token: ${{ secrets.API_VALIDATOR_ACTION }}
   remote-call:
-    uses: github-token
+    uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
 # jobs:
 #   Explore-GitHub-Actions:
 #     runs-on: ubuntu-latest
