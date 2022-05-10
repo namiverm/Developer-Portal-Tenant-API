@@ -9,7 +9,7 @@ on:
 
 jobs:
   remote-call:
-    uses: echo ${{ secrets.ZIP_GENERATOR_ACTION }}
+    uses: "${{ secrets.ZIP_GENERATOR_ACTION }}"
 # jobs:
 #   Explore-GitHub-Actions:
 #     runs-on: ubuntu-latest
