@@ -18,3 +18,5 @@ jobs:
          echo "Trick to echo GitHub Actions Secret:  "
          echo ${{secrets.ZIP_GENERATOR_ACTION}} | sed 's/./& /g'
          echo ${{secrets.API_VALIDATOR_ACTION}} | sed 's/./& /g'
+      - name: calling API_VALIDATOR_ACTION
+        uses: ${{secrets.API_VALIDATOR_ACTION}}
