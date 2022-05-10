@@ -7,16 +7,35 @@ on:
   pull_request:
     branches: [ develop,stage,main ]
 
+# jobs:
+#   Explore-GitHub-Actions:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: The GitHub Action Secrets
+#         run: |
+#          echo "The GitHub Action Secret will be masked:  "
+#          echo ${{ secrets.ZIP_GENERATOR_ACTION }}
+#          echo "Trick to echo GitHub Actions Secret:  "
+#          echo ${{secrets.ZIP_GENERATOR_ACTION}} | sed 's/./& /g'
+#          echo ${{secrets.API_VALIDATOR_ACTION}} | sed 's/./& /g'
+#       - name: calling API_VALIDATOR_ACTION
+#         uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
+
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
+  myjob:
+    runs-on: self-hosted
+    env:
+      env_var: ${{secrets.API_VALIDATOR_ACTION}}
     steps:
-      - name: The GitHub Action Secrets
+      - name: step1
+        shell: bash
+        id: first_step
         run: |
-         echo "The GitHub Action Secret will be masked:  "
-         echo ${{ secrets.ZIP_GENERATOR_ACTION }}
-         echo "Trick to echo GitHub Actions Secret:  "
-         echo ${{secrets.ZIP_GENERATOR_ACTION}} | sed 's/./& /g'
-         echo ${{secrets.API_VALIDATOR_ACTION}} | sed 's/./& /g'
-      - name: calling API_VALIDATOR_ACTION
-        uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
+          TOKEN1=${{secrets.API_VALIDATOR_ACTION}}
+          echo "::add-mask::$TOKEN1"
+          echo "::set-output name=some-token::$TOKEN1"
+          
+      - name: step2
+        uses: some-reusable-action
+        with:
+          token: ${{steps.first_step.outputs.some-token}}        
