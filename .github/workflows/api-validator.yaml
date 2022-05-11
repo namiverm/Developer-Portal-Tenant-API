@@ -8,4 +8,4 @@ on:
    
 jobs:
   call-yaml-validator-from-remote-action:
-    uses: "${{ secrets.API_VALIDATOR_ACTION }}"
+    uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
