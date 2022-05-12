@@ -7,8 +7,6 @@ on:
       - 'reference/**' 
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    name: Build and Test
-    steps:
-    - uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
+  remote-call:
+    if: push.paths == 'reference/**' 
+    uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
