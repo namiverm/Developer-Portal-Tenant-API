@@ -8,5 +8,5 @@ on:
    
 jobs:
   call-yaml-validator-from-remote-action:
-    if: github.event_name.push.paths == 'docs/**'  
+    if: github.event_name.pull_request.paths == 'docs/**'  
     uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
