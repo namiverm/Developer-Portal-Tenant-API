@@ -7,6 +7,5 @@ on:
       - 'reference/**' 
 
 jobs:
-  remote-call:
-    if: push.paths == 'reference/**' 
+  remote-call: 
     uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
