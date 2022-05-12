@@ -11,5 +11,5 @@ jobs:
     uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
  
   call-zip-gen-from-remote-action:
-    if: github.event_name.pull_request.paths == 'docs/**' || github.event_name.push.paths == 'docs/**' 
+    if: github.event_name == 'pull_request'
     uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
