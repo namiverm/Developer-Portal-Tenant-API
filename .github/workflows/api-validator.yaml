@@ -10,6 +10,6 @@ jobs:
   call-yaml-validator-from-remote-action: 
     uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
  
-  call-zip-gen-from-remote-action:
-    if: github.event_name == 'pull_request'
-    uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
+  # call-zip-gen-from-remote-action:
+  #   if: github.event_name == 'pull_request'
+  #   uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
