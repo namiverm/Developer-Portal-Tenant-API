@@ -7,5 +7,5 @@ on:
       - 'reference/**' 
 
 jobs:
-  call-zip-generator-from-remote-action:
-    uses: Fiserv/remote-actions/.github/workflows/github-zip-generator.yaml@develop
+  remote-call: 
+    uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
