@@ -132,7 +132,7 @@ Please wait until Build and Deployment is completed. Once completed icon should 
 
 ## Step 13: Launching your application
 
-Final step is to launch your application by clicking on Open URL.
+Final step is to launch your application by clicking on Open URL. Test Changes
 
 ![Launch App]
  
