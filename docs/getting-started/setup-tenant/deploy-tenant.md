@@ -2,7 +2,7 @@
 
 ## Documentation Quickstart Guide
 
-Need to deploy your application ? 
+Need to deploy your tenant application ? 
 
 This quick start guide will provide you the necessary steps to get your Application setup, configure and deploy on Cloud Server really quick.
 
@@ -132,7 +132,7 @@ Please wait until Build and Deployment is completed. Once completed icon should 
 
 ## Step 13: Launching your application
 
-Final step is to launch your application by clicking on Open URL.
+Final step is to launch your application by clicking on Open URL. Test Changes
 
 ![Launch App]
  
