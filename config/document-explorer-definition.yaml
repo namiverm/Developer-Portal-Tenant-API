@@ -40,7 +40,7 @@
     link: docs/getting-started.md
     open: true
     sections:
-    - title: Setup your new Tenant
+    - title: Setup new Tenant
       link: docs/getting-started/setup-tenant/setup-tenant.md
     - title: Deploy Tenant
       link: docs/getting-started/setup-tenant/deploy-tenant.md
