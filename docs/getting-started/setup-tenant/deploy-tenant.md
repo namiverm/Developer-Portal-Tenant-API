@@ -11,7 +11,7 @@ Quick start guide will provide you the necessary steps to get your Application s
     * Tenant Setup
     * Tenant Repository Setup
 
-Tenant Developer is now ready to deploy your tenant application. Developer can delpoy application in any open cloud server. Here we are providing example for new application deployment within IBM cloud with OpenShift Cluster. 
+Developer is now ready to deploy your tenant application. Developer can delpoy application in any open cloud server. Here we are providing example for new application deployment within IBM cloud with OpenShift Cluster. 
 
 ## Deployment checklist
 
@@ -132,7 +132,7 @@ Please wait until Build and Deployment is completed. Once completed icon should 
 
 ## Step 13: Launching your application
 
-Final step is to launch your application by clicking on Open URL. Test Changes
+Final step is to launch your application by clicking on Open URL. Test Changes with new github API
 
 ![Launch App]
  
