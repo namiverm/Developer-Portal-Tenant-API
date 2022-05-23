@@ -122,7 +122,7 @@ Click **Create** button to generate the application resource.
 
 ## Step 12: Generating Application
 
-Now developer should able to see application icon in your Topology view.
+Now tenant developer should able to see application icon in your Topology view.
 
 ![Generate App]
 
