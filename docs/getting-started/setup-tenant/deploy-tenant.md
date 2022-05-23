@@ -25,7 +25,7 @@ Here are the following steps to integrate your new tenant application within Ope
 
 ## Step 1: Login to IBM OpenShift cluster 
 
-Developer can access [IBM Cloud] to navigate to Home page of OpenShift. 
+Tenant Developer can access [IBM Cloud] to navigate to Home page of OpenShift. 
 
 Select your active cluster. Example: `<new-running-cluster>`
 
