@@ -52,7 +52,7 @@ productPage:
               - uri: /docs/getting-started.md
           - contextualNavigationCard:
             - title: Tutorials
-            - description: Learn how to integrate with Developer Studio.
+            - description: Learn how to integrate your tenant with Developer Studio.
             - link: 
               - type: markdown
               - uri: /docs/tutorials.md
