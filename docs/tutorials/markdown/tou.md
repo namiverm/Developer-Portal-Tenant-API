@@ -22,13 +22,14 @@ Sample test file
 
 3.  You will not and will not allow anyone else to:
 
-  1.  access, use, modify, adapt, reformat, exploit or copy the Fiserv APIs or Documentation, in whole or in part, except as expressly permitted in these Terms;
+    1.  access, use, modify, adapt, reformat, exploit or copy the Fiserv APIs or Documentation, in whole or in part, except as expressly permitted in these Terms;
 
-  2. alter or remove any copyright or other Fiserv source identifier contained in the Fiserv APIs or Documentation or in any copy of either;
+    2. alter or remove any copyright or other Fiserv source identifier contained in the Fiserv APIs or Documentation or in any copy of either;
+
 
 
 -  You will not and will not allow anyone else to:
 
-  -  access, use, modify, adapt, reformat, exploit or copy the Fiserv APIs or Documentation, in whole or in part, except as expressly permitted in these Terms;
+   -  access, use, modify, adapt, reformat, exploit or copy the Fiserv APIs or Documentation, in whole or in part, except as expressly permitted in these Terms;
 
-  - alter or remove any copyright or other Fiserv source identifier contained in the Fiserv APIs or Documentation or in any copy of either;
+   - alter or remove any copyright or other Fiserv source identifier contained in the Fiserv APIs or Documentation or in any copy of either;
