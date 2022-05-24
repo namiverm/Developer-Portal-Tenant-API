@@ -4,13 +4,14 @@
 
     * Docignore file should be defined as '.docignore' file.
 
-    * File should be placed into root directory of github repository.
+    * File should be placed into root directory of github tenant repository.
 
     * Any exisitng file(s) relative name or absolute path can be defined in this docignore file.
 
-    * Any exisitng file(s) can be mentioned in this file to hide from Search 
-        results and document explorer navigation bar.
+    * Any exisitng file(s) can be mentioned in this file to hide from Search results and document explorer navigation bar.
 
     * It is not recommended just to define any subdirectory name in this file.
+
+    * Currently it doesn't support exclude option.
 
     
