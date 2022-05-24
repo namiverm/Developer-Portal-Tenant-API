@@ -55,13 +55,13 @@
     link:
     open: true
     sections:
-    - title: API Guide
+    - title: API Guidelines
       link: docs/resources/guides/api-guide.md
-    - title: How it works
+    - title: Lets check how it works
       link: docs/resources/guides/how-to-use-stoplight.md
-    - title: How to use Stoplight
+    - title: Lets check how to use Stoplight
       link: docs/resources/guides/how-to-use-stoplight.md
-    - title: How to use Docignore
+    - title: Lets check how to use Docignore
       link: docs/resources/guides/how-to-use-docignore.md
     - title: Tutorials
       link: docs/resources/guides/how-to-use-docignore.md
