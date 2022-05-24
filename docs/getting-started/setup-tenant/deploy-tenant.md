@@ -1,6 +1,6 @@
 # Deploy the tenant
 
-## Documentation Quickstart Guide
+## Quickstart Guide
 
 Need to deploy your tenant application ? 
 

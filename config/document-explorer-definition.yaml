@@ -40,15 +40,15 @@
     link: docs/getting-started.md
     open: true
     sections:
-    - title: Setup Tenant
+    - title: Setup New Tenant
       link: docs/getting-started/setup-tenant/setup-tenant.md
-    - title: Deploy Tenant
+    - title: Deploy New Tenant
       link: docs/getting-started/setup-tenant/deploy-tenant.md
-    - title: Register Tenant
+    - title: Register New Tenant
       link: docs/getting-started/setup-tenant/register-tenant.md
-    - title: Code your Tenant
+    - title: Code New Tenant
       link: docs/getting-started/code-a-tenant/code-tenant.md
-    - title: Preview & Publish
+    - title: Preview & Publish Content
       link: docs/getting-started/preview-and-publish-content/preview-and-publish.md
 - sections:
   - title: Resources
