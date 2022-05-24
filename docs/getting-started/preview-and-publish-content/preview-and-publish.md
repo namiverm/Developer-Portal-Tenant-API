@@ -36,9 +36,9 @@ Switch the Git Branches to preview/publish the project content.
 
 ![Stoplight Publish Branch]
 
-## 5. Select the file to modify, edit the content & push the changes to GitHub.
+## 5. Select the file to modify, edit the content & push the changes into GitHub.
 
-Select the file to edit, make changes, preview it & then push the changes to GitHub.
+Select the file to edit, make changes, preview it & then push the changes into GitHub.
 
 ![Stoplight Content Edit]
 
