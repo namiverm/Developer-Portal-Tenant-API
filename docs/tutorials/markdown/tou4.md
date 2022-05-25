@@ -27,12 +27,19 @@ Sample test file
     2. alter or remove any copyright or other Fiserv source identifier contained in the Fiserv APIs or Documentation or in any copy of either;
 
 
+**3.  Licenses and Restictions.**
 
-3.1.  You will not and will not allow anyone else to:
+    3.1.  You will not and will not allow anyone else to:
 
-   1.  access, use, modify, adapt, reformat, exploit or copy the Fiserv APIs or Documentation, in whole or in part, except as expressly permitted in these Terms;
+    3.2  access, use, modify, adapt, reformat, exploit or copy the Fiserv APIs or Documentation except as expressly permitted in these Terms;
 
-   2. alter or remove any copyright or other Fiserv source identifier contained in the Fiserv APIs or Documentation or in any copy of either;
+    3.3. alter or remove any copyright or other Fiserv source identifier contained in the Fiserv APIs or Documentation or in any copy of either;
+
+        (1) access
+        
+        (2) alter
+        
+        (3) modify
 
 
 
