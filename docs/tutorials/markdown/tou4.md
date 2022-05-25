@@ -29,17 +29,17 @@ Sample test file
 
 **3.  Licenses and Restictions.**
 
-    3.1.  You will not and will not allow anyone else to:
+  3.1.  You will not and will not allow anyone else to:
 
-    3.2  access, use, modify, adapt, reformat, exploit or copy the Fiserv APIs or Documentation except as expressly permitted in these Terms;
+  3.2  access, use, modify, adapt, reformat, exploit or copy the Fiserv APIs or Documentation except as expressly permitted in these Terms;
 
-    3.3. alter or remove any copyright or other Fiserv source identifier contained in the Fiserv APIs or Documentation or in any copy of either;
+  3.3. alter or remove any copyright or other Fiserv source identifier contained in the Fiserv APIs or Documentation or in any copy of either;
 
-        (1) access
+    (1) access
         
-        (2) alter
+    (2) alter
         
-        (3) modify
+    (3) modify
 
 
 
