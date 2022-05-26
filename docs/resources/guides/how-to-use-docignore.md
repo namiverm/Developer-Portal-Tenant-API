@@ -2,7 +2,7 @@
 
 ## Documentation Guide to work with docignore
 
-    * Docignore file should be defined as '.docignore' file.
+    * Docignore file should be defined as '.docignore'.
 
     * File should be placed into root directory of github tenant repository.
 
