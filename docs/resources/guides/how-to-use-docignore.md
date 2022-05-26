@@ -10,7 +10,7 @@
 
     * Any exisitng file(s) can be mentioned in this file to hide from Search results and document explorer navigation bar.
 
-    * It is not recommended just to define any subdirectory name in this file.
+    * Not recommended to define any subdirectory name in this file.
 
     * Currently it doesn't support exclude option.
 
