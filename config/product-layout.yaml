@@ -37,7 +37,7 @@ productPage:
         - title: Learn # => learn 
         - description: 'Use our AI-powered studio to quickly discover the right integration for your next app project.
         
-        Experiment with our API’s in our intelligent API Explorer. 
+        Experiment with our API’s in our intelligent API Explorer via Run Feature. 
         
         Browse sample code and follow our guided tutorials to learn best practices for api integration.Hooks2'
         - link: 
