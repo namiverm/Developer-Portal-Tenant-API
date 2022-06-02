@@ -92,6 +92,7 @@ paths:
       x-group-name: Address Service
       x-proxy-name: Update Address
       x-child-product-name: Accountholder
+      x-default-example: modifyAddr
     post:
       tags:
       - Add Address
