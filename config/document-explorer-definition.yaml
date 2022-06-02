@@ -67,7 +67,7 @@
       link: docs/resources/guides/how-to-use-docignore.md
       open: true
       sections:
-      - title: Markdown Guide
+      - title: Markdown Support Guide
         link: docs/resources/markdown-support.md
         open: true
         sections:

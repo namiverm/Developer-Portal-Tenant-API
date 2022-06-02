@@ -7,10 +7,10 @@ on:
     branches: [ develop,stage,main ]
    
 jobs:
-  call-yaml-validator-from-remote-action: 
+  yaml-validator: 
     uses: Fiserv/remote-actions/.github/workflows/github-yaml-validator.yaml@develop
   
-  call-markdown-validator-from-remote-action: 
+  markdown-validator: 
     uses: Fiserv/remote-actions/.github/workflows/github-md-validator.yaml@develop    
  
   # call-zip-gen-from-remote-action:
