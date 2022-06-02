@@ -92,6 +92,7 @@ paths:
       x-group-name: Address Service
       x-proxy-name: Update Address
       x-child-product-name: Accountholder
+      x-default-example: modifyAddr
     post:
       tags:
       - Add Address
@@ -173,6 +174,7 @@ paths:
       x-group-name: Address Service
       x-proxy-name: Add Address
       x-child-product-name: Accountholder
+      x-default-example: addAddress
   /address/secured:
     put:
       tags:
@@ -340,6 +342,7 @@ paths:
       x-group-name: Address Service
       x-proxy-name: Get Address
       x-child-product-name: Accountholder
+      x-default-example: Sample Banking By Street Test
 components:
   schemas:
     EFXHeader:
