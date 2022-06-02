@@ -342,6 +342,7 @@ paths:
       x-group-name: Address Service
       x-proxy-name: Get Address
       x-child-product-name: Accountholder
+      x-default-example: Sample Banking By Street
 components:
   schemas:
     EFXHeader:
