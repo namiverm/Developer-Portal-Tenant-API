@@ -24,7 +24,7 @@ Click on the Edit button to edit the content for the selected project.
 
 ## 4. Switch the Git Branches
 
-Switch the Git Branches to preview/publish the project content.
+Switch the Github Branches to preview/publish the project content.
 
 ![Stoplight Switch Git Branch]
 
