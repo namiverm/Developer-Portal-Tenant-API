@@ -2,7 +2,7 @@
 
 ## Quickstart Guide
 
-Want to preview/publish documentation? This quick start guide will provide you with the necessary steps to get you from API Specification to ready-to-preview/publish API Documentation in 5 minutes flat.
+Want to preview/publish documentation? This quick start guide will provide you with the necessary steps to get you from API Specification to ready-to-preview/publish API Documentation in 10 minutes flat.
 
 ## 1. Open Fiserv Portal Stoplight
 
