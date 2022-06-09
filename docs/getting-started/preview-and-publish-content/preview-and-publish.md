@@ -22,7 +22,7 @@ Click on the Edit button to edit the content for the selected project.
 
 ![Stoplight Edit Page]
 
-## 4. Switch the Git Branches
+## 4. Switch the Github Branches
 
 Switch the Github Branches to preview/publish the project content.
 
