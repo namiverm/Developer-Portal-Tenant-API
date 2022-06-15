@@ -42,6 +42,8 @@ paths:
     get:
       tags:
         - Tenant
+      x-group-name: Tenant
+      x-proxy-name: apis        
       summary: Returns tenant provider API.
       operationId: TenantProviderID
       responses:
