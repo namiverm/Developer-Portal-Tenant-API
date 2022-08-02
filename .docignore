@@ -4,7 +4,7 @@
 # tutorials/
 
 # Docs FAQ directory
-  FAQ/
+  faq/
 
 # This should all file and subdirectory under versioning dir
 documentation/**
