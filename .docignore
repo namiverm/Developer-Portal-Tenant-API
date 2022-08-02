@@ -3,6 +3,9 @@
 # Docs tutorials directory
 # tutorials/
 
+# Docs FAQ directory
+  FAQ/
+
 # This should all file and subdirectory under versioning dir
 documentation/**
 
