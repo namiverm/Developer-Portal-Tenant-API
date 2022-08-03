@@ -4,12 +4,12 @@
 # tutorials/
 
 # Docs FAQ directory
-faq/
+  faq/
 
 # This should all file and subdirectory under versioning dir
-documentation/**
+  documentation/**
 
-!docs/documentation/changelog.md
+  !docs/documentation/changelog.md
 
 # Declaring one particular markdown file to ignore
-api-nomenclature.md
+  api-nomenclature.md
