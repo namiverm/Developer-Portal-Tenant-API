@@ -7,7 +7,9 @@
   faq/
 
 # This should all file and subdirectory under versioning dir
-  documentation/**
+
+documentation/**
+docs/resources/guides/**
 
 # Skip particular file from Ignored 'Documentation' directory
   !docs/documentation/changelog.md
