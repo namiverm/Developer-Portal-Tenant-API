@@ -9,6 +9,7 @@
 # This should all file and subdirectory under versioning dir
   documentation/**
 
+# Skip particular file from Ignored 'Documentation' directory
   !docs/documentation/changelog.md
 
 # Declaring one particular markdown file to ignore
