@@ -8,11 +8,13 @@
 
 # This should all file and subdirectory under versioning dir
 
-documentation/**
-docs/resources/guides/**
+  documentation/**
+  docs/resources/guides/**
 
-# Skip particular file from Ignored 'Documentation' directory
+# Excluding files from docignore func
+
   !docs/documentation/changelog.md
-
+  !docs/resources/guides/how-to-use-docignore.md
+  
 # Declaring one particular markdown file to ignore
   api-nomenclature.md
