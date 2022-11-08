@@ -8,5 +8,5 @@ on:
    
 jobs:
   validator: 
-    uses: Fiserv/remote-actions/.github/workflows/validator-service.yaml@${GITHUB_REF##*/}
+    uses: Fiserv/remote-actions/.github/workflows/validator-service.yaml@${GITHUB_REF#refs/heads/}
     
