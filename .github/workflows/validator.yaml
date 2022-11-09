@@ -5,9 +5,7 @@ on:
     branches: [ develop,stage,main ]
   pull_request:
     branches: [ develop,stage,main ]
-    paths:
-      - ['reference/**','docs/**','config/tenant.json']
-   
+       
 jobs:
   validator: 
     uses: Fiserv/remote-actions/.github/workflows/validator-service.yaml@develop
