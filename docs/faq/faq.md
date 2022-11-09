@@ -16,7 +16,7 @@ A: Please refer to our documentation section for registering up new tenant. [Dep
 
 Q: Do I need to have a Github account?
 
-A: Yes, To set up your tenant server. Your application code will be linked with Github repsoitory. Here is an example for [Sample tenant repo]
+A: Yes, To set up your tenant server. Your application code will be linked with Github repsoitory. Here is an example for [Sample tenant repo] test123
 
 
 [//]: # (These are reference links used in markdown file)
