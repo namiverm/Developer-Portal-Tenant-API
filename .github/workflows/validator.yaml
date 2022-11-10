@@ -14,5 +14,5 @@ jobs:
   MD-Validator-Action:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ format( '{0}/{1}' , github.workspace , reference/** )  }} event."
+      - run: echo "🎉 The job was automatically triggered by a '${{ github.workspace }}/reference/**'  event."
     
