@@ -1,5 +1,6 @@
 name: Studio Validator
 on:
+  workflow_call:
   # Triggers the workflow on push or pull request events but only for the dev , stage and main branch
   push:
     branches: [ develop,stage,main ]
@@ -10,8 +11,8 @@ on:
 #   validator: 
 #     uses: Fiserv/remote-actions/.github/workflows/validator-service.yaml@main
 jobs:
-  pathfinder:
+  MD-Validator-Action:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 FIle PATH- --- ${{ format( '{0}/{1}' , github.workspace , reference/** )}}"
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
     
