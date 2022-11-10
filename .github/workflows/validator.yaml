@@ -14,5 +14,5 @@ jobs:
   MD-Validator-Action:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a '${{ github.event.path  github.workspace/reference/** }}'  event."
+      - run: echo "🎉 The job was automatically triggered by a '${{ github.event.path  github.workspace}}/reference/** '  event."
         #if: ${{ ((github.ref == 'refs/heads/develop') || (github.ref == 'refs/heads/stage') || (github.ref == 'refs/heads/main')) && (github.event.path == github.workspace/reference/**) }}
