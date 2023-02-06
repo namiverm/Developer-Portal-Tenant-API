@@ -93,19 +93,19 @@ paths:
       x-proxy-name: Update Address
       x-child-product-name: Accountholder
       x-default-example: modifyAddr
-#       useCases:
-#         - title: Use Case 1
-#           description: Creates a new address record for a Party or a financial account.
-#           link: docs/getting-started.md
-#           tags:
-#             - Tag 1
-#             - Tag 2
-#         - title: Use Case 2
-#           description: Creates a new address record for a Party or a financial account.
-#           link: docs/getting-started.md
-#           tags:
-#             - Tag 1
-#             - Tag 2
+      x-use-cases:
+        - title: Use Case 1
+          description: Creates a new address record for a Party or a financial account.
+          link: docs/getting-started.md
+          tags:
+            - Tag 1
+            - Tag 2
+        - title: Use Case 2
+          description: Creates a new address record for a Party or a financial account.
+          link: docs/getting-started.md
+          tags:
+            - Tag 1
+            - Tag 2
     post:
       tags:
       - Add Address
