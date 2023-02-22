@@ -188,6 +188,19 @@ paths:
       x-proxy-name: Add Address
       x-child-product-name: Accountholder
       x-default-example: addAddress
+      x-use-cases:
+        - title: Use Case 1
+          description: Creates a new address record for a Party or a financial account.
+          link: docs/getting-started.md
+          tags:
+            - Tag 1
+            - Tag 2
+        - title: Use Case 2
+          description: Creates a new address record for a Party or a financial account.
+          link: docs/getting-started.md
+          tags:
+            - Tag 3
+            - Tag 4
   /address/secured:
     put:
       tags:
