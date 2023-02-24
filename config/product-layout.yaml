@@ -29,7 +29,7 @@
 ################################################################################
 
 header:
-  productDescription: Use our AI-powered developer studio to quickly discover the right integration for your next app project. Experiment with our API’s in our intelligent API Explorer via Run Feature. Browse sample code and follow our guided tutorials to learn best practices for api integration.
+  productDescription: To onboard properly into the Developer Studio as a new tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.
 getStarted: /docs/getting-started.md
 benefits:
   - title: Transform Customer Experiences
