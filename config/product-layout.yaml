@@ -34,6 +34,7 @@ getStarted: /docs/getting-started.md
 benefits:
   - title: Transform Customer Experiences
     description: Pre-certified integrations to value added solutions and third-party providers that power next-generation commerce experiences.
+    icon: assets/icons/icons.svg
   - title: Accelerate Revenue
     description: Intelligent orchestration layer that reduces code complexity and operational costs.
   - title: Optimize Commerce
