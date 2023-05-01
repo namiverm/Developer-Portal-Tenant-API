@@ -1,20 +1,2 @@
 # This is custom file to hide/ignore any document file(s) or directory(s).
 
-# Docs tutorials directory
-# tutorials/
-
-# Docs FAQ directory
-  faq/
-
-# This should all file and subdirectory under versioning dir
-
-  !documentation/**
-  !docs/resources/guides/**
-
-# Excluding files from docignore func
-
-  !docs/documentation/changelog.md
-  !docs/resources/guides/how-to-use-docignore.md
-  
-# Declaring one particular markdown file to ignore
-  api-nomenclature.md
