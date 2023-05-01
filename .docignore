@@ -8,8 +8,8 @@
 
 # This should all file and subdirectory under versioning dir
 
-  documentation/**
-  docs/resources/guides/**
+  !documentation/**
+  !docs/resources/guides/**
 
 # Excluding files from docignore func
 
