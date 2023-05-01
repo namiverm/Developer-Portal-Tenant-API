@@ -11,8 +11,6 @@ The hosted pages show your merchant name at the top and allow you to display a s
 
 [This is an external link to hostedpage-option link](/api/hosted-image/IPGNA/assets/images/hostedpage-option.jpg)
 
-![reportingoverview](../assets/images/reportingoverview.png)
-
 
 ## Required Fields
 
