@@ -7,9 +7,9 @@ The hosted pages show your merchant name at the top and allow you to display a s
 
 **Important Note: When making decisions on your way of integration, please consider that we do not recommend to use the hosted payment forms inside an iFrame since some Internet browsers do not allow cookies to be sent to the 3rd party hosts, moreover some features (e.g.: 3D Secure authentications) and some Alternative Payment methods that involve redirections to the 3rd party services (e.g. iDEAL or PayPal) do not allow displaying their screens within an iFrame.  However, if you still plan to embed our hosted payment pages inside an iFrame you must use the 'parentUri' parameter to specify an URL of a page, where the hosted payment page will be embedded.**
 
-![hostedpage-option](/api/hosted-image/IPGNA/assets/images/hostedpage-option.jpg)
+![hostedpage-option](/api/hosted-image/Developer-Portal-Tenant-API/assets/images/hostedpage-option.jpg)
 
-[This is an external link to hostedpage-option link](/api/hosted-image/IPGNA/assets/images/hostedpage-option.jpg)
+[This is an external link to hostedpage-option link](/api/hosted-image/Developer-Portal-Tenant-API/assets/images/hostedpage-option.jpg)
 
 
 ## Required Fields
