@@ -11,7 +11,7 @@ The hosted pages show your merchant name at the top and allow you to display a s
 
 [This is an external link to hostedpage-option link](/api/hosted-image/Developer-Portal-Tenant-API/assets/images/hostedpage-option.jpg)
 
-![hostedpage-option1](?path=api/hosted-image/Developer-Portal-Tenant-API/assets/images/hostedpage-option.jpg)
+![hostedpage-option1](../api/hosted-image/Developer-Portal-Tenant-API/assets/images/hostedpage-option.jpg)
 
 
 ## Required Fields
