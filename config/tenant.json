@@ -37,7 +37,7 @@
         "Notification/NotificationsPreferencesService",
         "Payments/CreditService",
         "Payments/DebitService",
-        "Payments/TransferService"
+        "Payments/TransferService-test"
       ]
     }
   ],
