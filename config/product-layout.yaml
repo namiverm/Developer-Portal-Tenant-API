@@ -49,7 +49,7 @@ guides:
     description: Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents.
     link: docs/resources/markdown-support.md
 featuredFeatures:
-  - title: Documentation 1 RG
+  - title: Documentation 1
     groupName: Guides
     featured: true
     description: Step by step documentation to setup and market your product.
@@ -60,7 +60,7 @@ featuredFeatures:
       - type: post
         path: /address
         title: Add Address
-  - title: Documentation 1 RG
+  - title: Documentation 1
     groupName: Howto
     featured: true
     description: Step by step documentation to setup and market your product.
@@ -71,7 +71,7 @@ featuredFeatures:
       - type: post
         path: /address
         title: Add Address
-  - title: Documentation 2 RG
+  - title: Documentation 2
     groupName: Guides
     description: Step by step documentation to setup and market your product.
     relatedDocs:
@@ -81,9 +81,8 @@ featuredFeatures:
       - type: post
         path: /address
         title: Add Address
-  - title: Documentation 3 RG
+  - title: Documentation 3
     groupName: Guides
-    featured: true
     description: Step by step documentation to setup and market your product.
     relatedDocs:
       - link: docs/getting-started/setup-tenant/setup-tenant.md
@@ -92,38 +91,7 @@ featuredFeatures:
       - type: post
         path: /address
         title: Add Address
-  - title: Documentation 2 RG
-    groupName: Howto
-    featured: true
-    description: Step by step documentation to setup and market your product.
-    relatedDocs:
-      - link: docs/getting-started/setup-tenant/setup-tenant.md
-        title: Tenant setup
-    relatedAPIs:
-      - type: post
-        path: /address
-        title: Add Address    
-  - title: Documentation 2 RGsdfsdfsdfg
-    groupName: Howto
-    description: Step by step documentation to setup and market your product.
-    relatedDocs:
-      - link: docs/getting-started/setup-tenant/setup-tenant.md
-        title: Tenant setup
-    relatedAPIs:
-      - type: post
-        path: /address
-        title: Add Address  
-  - title: Documentation 2 RGsdfsdfsdfgsdfsdfvsdfb
-    groupName: Howto
-    description: Step by step documentation to setup and market your product.
-    relatedDocs:
-      - link: docs/getting-started/setup-tenant/setup-tenant.md
-        title: Tenant setup
-    relatedAPIs:
-      - type: post
-        path: /address
-        title: Add Address        
-  - title: Documentation 2 RGsdfsdfsdfg dfgb
+  - title: Documentation 2
     groupName: Howto
     description: Step by step documentation to setup and market your product.
     relatedDocs:
@@ -133,7 +101,7 @@ featuredFeatures:
       - type: post
         path: /address
         title: Add Address
-  - title: Documentation 32 Modified
+  - title: Documentation 3
     groupName: Howto
     description: Step by step documentation to setup and market your product.
     relatedDocs:
@@ -142,4 +110,4 @@ featuredFeatures:
     relatedAPIs:
       - type: post
         path: /address
-        title: Add Address        
+        title: Add Address
