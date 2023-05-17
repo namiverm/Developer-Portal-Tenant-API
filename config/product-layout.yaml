@@ -94,6 +94,7 @@ featuredFeatures:
         title: Add Address
   - title: Documentation 2 RG
     groupName: Howto
+    featured: true
     description: Step by step documentation to setup and market your product.
     relatedDocs:
       - link: docs/getting-started/setup-tenant/setup-tenant.md
