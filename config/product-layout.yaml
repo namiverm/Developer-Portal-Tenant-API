@@ -49,7 +49,7 @@ guides:
     description: Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents.
     link: docs/resources/markdown-support.md
 featuredFeatures:
-  - title: Documentation 1
+  - title: Documentation 1 RG
     groupName: Guides
     featured: true
     description: Step by step documentation to setup and market your product.
@@ -60,7 +60,7 @@ featuredFeatures:
       - type: post
         path: /address
         title: Add Address
-  - title: Documentation 1
+  - title: Documentation 1 RG
     groupName: Howto
     featured: true
     description: Step by step documentation to setup and market your product.
@@ -71,7 +71,7 @@ featuredFeatures:
       - type: post
         path: /address
         title: Add Address
-  - title: Documentation 2
+  - title: Documentation 2 RG
     groupName: Guides
     description: Step by step documentation to setup and market your product.
     relatedDocs:
@@ -81,8 +81,9 @@ featuredFeatures:
       - type: post
         path: /address
         title: Add Address
-  - title: Documentation 3
+  - title: Documentation 3 RG
     groupName: Guides
+    featured: true
     description: Step by step documentation to setup and market your product.
     relatedDocs:
       - link: docs/getting-started/setup-tenant/setup-tenant.md
@@ -91,7 +92,7 @@ featuredFeatures:
       - type: post
         path: /address
         title: Add Address
-  - title: Documentation 2
+  - title: Documentation 2 RG
     groupName: Howto
     description: Step by step documentation to setup and market your product.
     relatedDocs:
@@ -101,7 +102,7 @@ featuredFeatures:
       - type: post
         path: /address
         title: Add Address
-  - title: Documentation 3
+  - title: Documentation 3 RG
     groupName: Howto
     description: Step by step documentation to setup and market your product.
     relatedDocs:
