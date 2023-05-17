@@ -113,7 +113,7 @@ featuredFeatures:
       - type: post
         path: /address
         title: Add Address
-    - title: Documentation 4 RGG
+  - title: Documentation 4 RGG
     groupName: Howto
     description: Step by step documentation to setup and market your product.
     relatedDocs:
