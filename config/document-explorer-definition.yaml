@@ -12,7 +12,7 @@
       open: true
       sections:
         - title: Setup New Tenant
-          link: docs/getting-started/setup-tenant/setup-tenant.md
+          link: docs/getting-started/setup-tenant/setup-tenant1.md
         - title: Deploy New Tenant
           link: docs/getting-started/setup-tenant/deploy-tenant.md
         - title: Register New Tenant
