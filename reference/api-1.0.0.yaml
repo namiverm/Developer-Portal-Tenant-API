@@ -28,7 +28,7 @@
 # the delivery of this work
 ################################################################################
 
- openapi: 3.0.2
+openapi: 3.0.2
 info:
   title: Dev Studio Tenant APIs.
   description: To onboard properly into the Fiserv Developer Studio askdjsa as a new tenant each
