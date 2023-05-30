@@ -1,0 +1,104 @@
+name: API Collection zip builder
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  #Triggers the workflow on push or pull request events but only for the develop , stage and main branch
+  workflow_call:  
+  push:
+    branches: [ develop,stage,main ]
+    paths:
+      - 'reference/**' 
+
+jobs:
+  ZIP-Generator-Actions:
+    runs-on: ubuntu-latest
+    # env:
+    #   SECRET_KEY: ${{ secrets.ACTION_SECRET }}    
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref_name }} and your repository is ${{ github.event.repository.name }}."       
+      - name: Creating new temp sub dir called `tools`
+        run: |
+         mkdir -m 777 tools
+         cd tools
+         pwd
+         ls -la
+      - name: Check out ${{ github.repository }} Repo code at ${{ github.workspace }}
+        uses: actions/checkout@v3
+        with:
+         repository: ${{ github.repository }}
+         path: ${{ github.workspace }}
+      - name: Check out Fiserv/remote-actions-v1 Repo code at ${{ github.workspace }}/tools
+        uses: actions/checkout@v3
+        with:
+         repository: Fiserv/remote-actions-v1
+         ref: develop
+         path: ${{ github.workspace }}/tools
+      - name: List files in the repository
+        run: |
+         cd ${{ github.workspace }}
+         pwd
+         ls -la
+         cd ${{ github.workspace }}/tools
+         pwd
+         ls -la
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned on root"
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      - name: List files in the repository
+        run: |
+         pwd
+         ls -la
+      - name: Running API Specs ZIP Generator.....
+        run: |
+          pwd
+          cd ${{ github.workspace }}/tools/scripts
+          ls -la
+          npmv=$(npm --version)
+          echo "NPM version installed : " $npmv
+          nodev=$(node --version)
+          echo "Node version installed : " $nodev
+          npm install
+          echo " Repo: ${{ github.repository }}"
+          echo " Space: ${{ github.workspace }}"
+          result=$(npm run download ${{github.workspace }})
+          echo "**********TEST RESULTS*********************"
+          echo "$result"
+          pwd
+          ls -la
+          rm -rf ${{github.workspace }}/tools
+          echo "Temp tools directory deleted ......"
+          if [[ $result == *'ZIP GENERATOR FAILED'* ]] ;then
+          echo "Validator failed and exiting the Job..."
+          exit 1
+          elif [[ $result == *'PASSED'* ]] ;then
+          echo "Validator Ran Successfully....🍏"
+          fi
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Show file content
+        run: |
+          pwd
+          ls -la
+          cd assets
+          ls -la
+          
+      # - name: Commited changes from action runner to remote branch
+      #   uses: stefanzweifel/git-auto-commit-action@v4   
+      #   with: 
+      #     commit_message: Automatically commit changes
+          #branch: collection      
+ 
+
+      - name: Pushing tenant doc file remotely into teanants-data repository.
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.ZIP_GENERATOR_ACTION }}
+        with:
+          source_file: '${{github.workspace}}/assets/${{ github.event.repository.name }}_postman.zip'
+          destination_repo: 'Fiserv/tenants-data'
+          destination_folder: 'assets'
+          destination_branch: '${{ github.ref_name }}'        
+          user_email: 'abhishek.singh3@fiserv.com'
+          user_name: 'asingh2023'
+          commit_message: 'pushing zip file remotely'                
+
