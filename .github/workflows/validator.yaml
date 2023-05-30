@@ -8,7 +8,8 @@ on:
 
 jobs:
   validator: 
-    uses: Fiserv/remote-actions-v1/.github/workflows/github-zip-generator.yaml@develop
+    #uses: Fiserv/remote-actions-v1/.github/workflows/github-zip-generator.yaml@develop
+    #secrets: inherit
+    uses: Fiserv/remote-actions/.github/workflows/validator-service.yaml@develop
     secrets: inherit
-    #uses: Fiserv/remote-actions/.github/workflows/validator-service.yaml@develop
     
