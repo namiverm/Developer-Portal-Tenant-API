@@ -1,15 +1,12 @@
 ---
 - sections:
     - title: Introduction
-      link: null
-      open: true
       sections:
         - title: Contact Studio Support
           link: docs/introduction/contact-us.md
 - sections:
     - title: Getting Started
       link: docs/getting-started.md
-      open: true
       sections:
         - title: Setup New Tenant
           link: docs/getting-started/setup-tenant/setup-tenant.md
@@ -23,8 +20,6 @@
           link: docs/getting-started/preview-and-publish-content/preview-and-publish.md
 - sections:
     - title: Resources
-      link: null
-      open: true
       sections:
         - title: API Guidelines
           link: docs/resources/guides/api-guide.md
@@ -36,11 +31,9 @@
           link: docs/resources/guides/how-to-use-docignore.md
         - title: Tutorials
           link: docs/resources/guides/how-to-use-docignore.md
-          open: true
           sections:
             - title: Markdown Support Guide
               link: docs/resources/markdown-support.md
-              open: true
               sections:
                 - title: Card Support
                   link: docs/tutorials/markdown/card.md
