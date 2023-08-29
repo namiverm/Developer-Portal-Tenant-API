@@ -1,0 +1,33 @@
+name: Webhook Retries
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  retry-webhook-delivery:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Retry Webhook Delivery
+        run: |
+          max_retries=3
+          retry_interval=5
+          retry_attempt=0
+          
+          while [ $retry_attempt -lt $max_retries ]; do
+            # Trigger your webhook logic here
+            response=$(curl -X POST -H "Content-Type: application/json" -d '{"key": "value"}' https://your-webhook-url)
+            
+            # Check if the webhook delivery was successful
+            if [ "$response" == "Webhook success" ]; then
+              echo "Webhook delivered successfully"
+              break  # Exit loop if successful
+            else
+              # Increment retry_attempt and wait before retrying
+              retry_attempt=$((retry_attempt + 1))
+              sleep $retry_interval
+              retry_interval=$((retry_interval * 2))
+            fi
+          done
