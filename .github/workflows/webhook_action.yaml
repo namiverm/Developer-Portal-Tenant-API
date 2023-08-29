@@ -1,21 +1,22 @@
+---
 name: Webhook Retries
-
 on:
   push:
     branches:
       - develop
-
 jobs:
   retry-webhook-delivery:
     runs-on: ubuntu-latest
-    
     steps:
       - name: Retry Webhook Delivery
-        run: |
+        run: >
           max_retries=3
+
           retry_interval=5
+
           retry_attempt=0
-          
+
+
           while [ $retry_attempt -lt $max_retries ]; do
             # Trigger your webhook logic here
             response=$(curl -s --max-time 60 -X POST -H "Content-Type: application/json" -d '{"Dev": "secret123"}' https://dev-developer.fiserv.com/api/github-push)
@@ -36,4 +37,3 @@ jobs:
               retry_interval=$((retry_interval * 2))
             fi
           done
-
