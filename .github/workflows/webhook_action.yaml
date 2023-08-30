@@ -10,15 +10,6 @@ jobs:
     steps:
       - name: Print Commit Information
         run: |
-          echo "Commit ID: ${{ github.event.commits[0].id }}"
-          echo "Author: ${{ github.event.commits[0].author.name }} <${{ github.event.commits[0].author.email }}>"
-          echo "Committer: ${{ github.event.commits[0].committer.name }} <${{ github.event.commits[0].committer.email }}>"
-          echo "Timestamp: ${{ github.event.commits[0].timestamp }}"
-          echo "URL: ${{ github.event.commits[0].url }}"
-          echo "Added files: ${{ toJson(github.event.commits[0].added) }}"
-          echo "Modified files: ${{ toJson(github.event.commits[0].modified[0]) }}"
-          echo "Removed files: ${{ toJson(github.event.commits[0].removed) }}"
-          echo "Message: ${{toJson(github.event.commits[0].message) }}"
           echo "Event Payload: ${{ toJson(github.event) }}"
         
       
