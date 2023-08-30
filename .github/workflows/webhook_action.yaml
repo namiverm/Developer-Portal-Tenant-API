@@ -16,7 +16,7 @@ jobs:
           echo "Timestamp: ${{ github.event.commits[0].timestamp }}"
           echo "URL: ${{ github.event.commits[0].url }}"
           echo "Added files: ${{ toJson(github.event.commits[0].added) }}"
-          echo "Modified files: ${{ toJson(github.event.commits[0].modified) }}"
+          echo "Modified files: ${{ toJson(github.event.commits[0].modified[0]) }}"
           echo "Removed files: ${{ toJson(github.event.commits[0].removed) }}"
           echo "Message: ${{toJson(github.event.commits[0].message) }}"
         
