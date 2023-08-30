@@ -8,10 +8,13 @@ jobs:
   retry-webhook-delivery:
     runs-on: ubuntu-latest
     steps:
+      - name: Print Commit Information
+        run: |
+          echo "Event Payload: ${{ toJson(github.event) }}"
       - name: Retry Webhook Delivery
         env:
           PAYLOAD: ${{ toJson(github.event) }}
-          run: >
+          run: |
             max_retries=3
 
             retry_interval=5
