@@ -16,7 +16,7 @@ jobs:
       - name: Set Environment Variables
         run: |
           echo "Setting environment variables"
-          echo "PAYLOAD='${{ toJson(github.event) }}'" >> $GITHUB_ENV
+          echo "PAYLOAD='${{ toJson(github.event) }}'"
           
       - name: Retry Webhook Delivery
         env:
