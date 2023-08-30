@@ -8,34 +8,16 @@ jobs:
   retry-webhook-delivery:
     runs-on: ubuntu-latest
     steps:
-      - name: Retry Webhook Delivery
-        env:
-          PAYLOAD: ${{ toJson(github.event.commits[0].message) }}
-        run: >
-          max_retries=3
-
-          retry_interval=5
-
-          retry_attempt=0
-
-
-          while [ $retry_attempt -lt $max_retries ]; do
-            # Trigger your webhook logic here
-            response=$(curl --max-time 60 -X POST -H "Content-Type: application/json" -d "$PAYLOAD" https://dev-developer.fiserv.com/api/github-push)
-    
-            # Print response for debugging
-            echo "Response:"
-            echo "$response"
-            
-            # Parse JSON response and check for status field
-            status=$(echo "$response" | jq -r '.status')
-            
-            if [ "$status" == "success" ]; then
-              echo "Webhook delivered successfully"
-              break
-            else
-              retry_attempt=$((retry_attempt + 1))
-              sleep $retry_interval
-              retry_interval=$((retry_interval * 2))
-            fi
-          done
+      - name: Print Commit Information
+        run: |
+          echo "Commit ID: ${{ github.event.commits[0].id }}"
+          echo "Author: ${{ github.event.commits[0].author.name }} <${{ github.event.commits[0].author.email }}>"
+          echo "Committer: ${{ github.event.commits[0].committer.name }} <${{ github.event.commits[0].committer.email }}>"
+          echo "Timestamp: ${{ github.event.commits[0].timestamp }}"
+          echo "URL: ${{ github.event.commits[0].url }}"
+          echo "Added files: ${{ toJson(github.event.commits[0].added) }}"
+          echo "Modified files: ${{ toJson(github.event.commits[0].modified) }}"
+          echo "Removed files: ${{ toJson(github.event.commits[0].removed) }}"
+          echo "Message: ${{toJson(github.event.commits[0].message) }}"
+        
+      
