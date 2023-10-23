@@ -30,6 +30,9 @@ Below is a quick reference of all the Markdown syntax that is supported by Stopl
 ##### H5
 ###### H6
 ```
+# Testing for PORT-7164
+## Title/Right Nav Pulled from Commented Out Header
+### Just trying things
 
 # H1
 ## H2
