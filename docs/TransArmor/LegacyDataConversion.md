@@ -11,4 +11,4 @@ Industries:
 Usage/Features:
 - File Transmission
 
-[LDC-Merchant_Feed_Specification_v2_1.pdf]D(LDC-Merchant_Feed_Specification_v2_1.pdf)
+[LDC-Merchant_Feed_Specification_v2_1.pdf](LDC-Merchant_Feed_Specification_v2_1.pdf)

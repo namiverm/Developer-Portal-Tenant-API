@@ -5,30 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8887a619-781c-47cd-918b-65e927b32f06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/files/SpecTest/TestID_Tech_PIMS.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/SpecTest/Test_Equinox_PIMS.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/SpecTest/Test_Multilink.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/TransArmor/Fiserv_Bulk_Tokenization_Spec_V2.4 (1).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/TransArmor/LDC-Merchant_Feed_Specification_v2_1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/TransArmor/P2PE_v2.0_PIM_ID_Tech_SREDKey2 v1.0.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/TransArmor/P2PE_v2.0_PIM_PAX_A920 v1.0.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/TransArmor/P2PE_v2_PIM_Equinox_Luxe_85xx-RSA_v1.0.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/TransArmor/P2PE_v3.1_PIM_ING Lane 3000-Desk 1500 v1.4.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/TransArmor/P2PE_v3.1_PIM_ING RP45x v1.4.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/TransArmor/REMOVETHISP2PE_v3.1_PIM_Ingenico iSCxxx v1.4 (1).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/TransArmor/p2PE_v2.0_PIM_VFI CM5 v1.1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/file-access-definition.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/TransArmor/BulkTokenization.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/TransArmor/LegacyDataConversion.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/Equinox.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/IDTech.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/IngenicoROAMMobile.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/IngenicoTelium2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/IngenicoTetra.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/PAX.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/document-explorer-definition.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/document-explorer-definition.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/product-layout.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/product-layout.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/tenant.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/tenant.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/SpecTest/SpecTest.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/SpecTest/SpecTest.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TransArmor/BulkTokenization.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TransArmor/BulkTokenization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TransArmor/LegacyDataConversion.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TransArmor/LegacyDataConversion.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/Equinox.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/Equinox.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/IDTech.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/IDTech.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/IngenicoROAMMobile.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/IngenicoROAMMobile.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/IngenicoTelium2.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/IngenicoTelium2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/IngenicoTetra.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/IngenicoTetra.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/PAX.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/PAX.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/Verifone.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TransArmor/P2PEPIMS/Verifone.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/files/file1.MD" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/file1.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
