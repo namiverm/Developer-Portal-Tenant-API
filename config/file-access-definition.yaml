@@ -87,3 +87,16 @@
 - filePath: "TransArmor/LDC-Merchant_Feed_Specification_v2_1.pdf"
   access: private
   groups: []
+
+- filePath: "Test_Folder/Private_File_Access.pdf"
+  access: private
+  groups: [Test_Group_RG]
+- filePath: "Test_Folder/Public File Access".pdf"
+  access: public
+  groups: [Test_Group_RG]
+- filePath: "Test_Folder/Private_File_Access_NoGroup.pdf"
+  access: private
+  groups: []
+- filePath: "Test_Folder/Public File Access_NoGroup".pdf"
+  access: public  
+  groups: []
