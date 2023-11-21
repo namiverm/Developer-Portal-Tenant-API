@@ -27,13 +27,13 @@
 # are granted or extended by this work or
 # the delivery of this work
 ################################################################################
-- filePath: "Spec_Testing/Private_File_Access.pdf"
+- filePath: "Spec Testing/Private_Access.pdf"
   access: private
   groups: [Test_Group_RG]
-- filePath: "Spec_Testing/Public_File_Access.pdf"
+- filePath: "Spec Testing/Public_Access.pdf"
   access: public
   groups: [Test_Group_RG]
-- filePath: "Spec_Testing/Private_File_Access_AccessGroupNotSpecified.pdf"
+- filePath: "Spec Testing/Private_File_Access_AccessGroupNotSpecified.pdf"
   access: private
   groups: []
 - filePath: "Spec_Testing/Public_File_Access_AccessGroupNotSpecified.pdf"
@@ -42,6 +42,6 @@
 - filePath: "Spec_Testing/public_access_But_accessGroup_invalid.pdf"
   access: public  
   groups: [Access_Group_not_in_DB]
-- filePath: "Spec_Testing/private_access_But_accessGroup_invalid.pdf"
+- filePath: "Spec Testing/Public_Access_But_accessGroup_invalid.pdf"
   access: private  
   groups: [Access_Group_not_in_DB]
