@@ -2,7 +2,7 @@
 
 **Current Version:** Released on May 6, 2022
 
-[Private Access - PDF](Private_Access.pdf)
+[Private Access - PDF]D(assets/files/Spec Testing/Private_Access.pdf)
 
 [Public Access - PDF](Reason_Code_Legend_test.xlsx)
 
