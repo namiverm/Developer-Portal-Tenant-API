@@ -19,10 +19,13 @@
           link: docs/getting-started/preview-and-publish-content/preview-and-publish.md
 - sections:
     - title: Gated Content
-      open: true  
       link: docs/Spec_Testing/gatedContent.md
-      access: public
-      groups: []
+      # open: true  
+      sections:
+      - title: Gated Content Testing
+        link: docs/Spec_Testing/gatedContent.md 
+      # access: public
+      # groups: []
 - sections:
     - title: Resources
       sections:
