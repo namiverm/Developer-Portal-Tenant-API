@@ -3,13 +3,6 @@
       sections:
         - title: Contact Studio Support
           link: docs/introduction/contact-us.md
-    - title: Gated Content Testing
-      open: true
-      sections:
-        - title: Gated Content Testing Docs
-          link: docs/Spec_Testing
-          access: public
-          groups: []
 - sections:
     - title: Getting Started
       link: docs/getting-started.md
@@ -25,6 +18,12 @@
         - title: Preview & Publish Content
           link: >-
             docs/getting-started/preview-and-publish-content/preview-and-publish.md
+- sections
+    - titles: Gated Content Testing
+      open: true
+      link: docs/Spec_Testing/gatedContent.md
+      access: public
+      groups: []
 - sections:
     - title: Resources
       sections:
