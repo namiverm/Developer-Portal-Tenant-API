@@ -19,7 +19,7 @@
           link: >-
             docs/getting-started/preview-and-publish-content/preview-and-publish.md
 - sections
-    - titles: Gated Content Testing
+    - title: Gated Content Testing
       open: true
       link: docs/Spec_Testing/gatedContent.md
       access: public
