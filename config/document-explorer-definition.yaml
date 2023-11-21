@@ -1,58 +1,13 @@
----
 - sections:
     - title: Introduction
       sections:
         - title: Contact Studio Support
           link: docs/introduction/contact-us.md
-    - title: TransArmor
+    - title: Gated Content Testing
       open: true
       sections:
-        - title: Legacy Data Conversion
-          open: true
-          link: docs/TransArmor/LegacyDataConversion.md
-          access: public
-          groups: []
-        - title: Network Tokens
-          open: true
-          link: docs/TransArmor/BulkTokenization.md
-          access: public
-          groups: []
-        - title: P2PE PIMS
-          open: true
-          sections:
-            - title: Equinox
-              link: docs/TransArmor/P2PEPIMS/Equinox.md
-              access: public
-              groups: [TRANSARMOR_P2PE_PIMS]
-            - title: ID Tech
-              link: docs/TransArmor/P2PEPIMS/IDTech.md
-              access: public
-              groups: [TRANSARMOR_P2PE_PIMS]
-            - title: Ingenico ROAM Mobile
-              link: docs/TransArmor/P2PEPIMS/IngenicoROAMMobile.md
-              access: public
-              groups: [TRANSARMOR_P2PE_PIMS]
-            - title: Ingenico Telium2
-              link: docs/TransArmor/P2PEPIMS/IngenicoTelium2.md
-              access: public
-              groups: [TRANSARMOR_P2PE_PIMS]
-            - title: Ingenico Tetra
-              link: docs/TransArmor/P2PEPIMS/IngenicoTetra.md
-              access: public
-              groups: [TRANSARMOR_P2PE_PIMS]
-            - title: PAX
-              link: docs/TransArmor/P2PEPIMS/PAX.md
-              access: public
-              groups: [TRANSARMOR_P2PE_PIMS]
-            - title: Verifone
-              link: docs/TransArmor/P2PEPIMS/Verifone.md
-              access: public
-              groups: [TRANSARMOR_P2PE_PIMS]
-    - title: Testing
-      open: true
-      sections:
-        - title: TestingDocs
-          link: docs/SpecTest/SpecTest.md
+        - title: Gated Content Testing Docs
+          link: docs/Spec_Testing
           access: public
           groups: []
 - sections:
@@ -68,7 +23,8 @@
         - title: Code New Tenant
           link: docs/getting-started/code-a-tenant/code-tenant.md
         - title: Preview & Publish Content
-          link: docs/getting-started/preview-and-publish-content/preview-and-publish.md
+          link: >-
+            docs/getting-started/preview-and-publish-content/preview-and-publish.md
 - sections:
     - title: Resources
       sections:
@@ -92,6 +48,3 @@
                   link: docs/tutorials/markdown/tabs.md
         - title: FAQ
           link: docs/faq/faq.md
-- sections:
-    - title: TESTING
-      link: docs/test.md
