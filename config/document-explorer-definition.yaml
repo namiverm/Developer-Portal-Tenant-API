@@ -16,8 +16,7 @@
         - title: Code New Tenant
           link: docs/getting-started/code-a-tenant/code-tenant.md
         - title: Preview & Publish Content
-          link: >-
-            docs/getting-started/preview-and-publish-content/preview-and-publish.md
+          link: docs/getting-started/preview-and-publish-content/preview-and-publish.md
 - sections
     - title: Gated Content Testing
       open: true
