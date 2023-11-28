@@ -6,7 +6,7 @@
 
 [Public Access, So anyone can check it - PDF](?path=assets/files/Spec_testing/Public_Access.pdf)
 
-[Entitled Access - PDF](?path=assets/files/Spec_testing/Entitled_Access.pdf)
+[Entitled Access - PDF](?path=assets/files/Spec_Testing/Entitled_Access.pdf)
 
 this file doesnot exist.
 
