@@ -29,19 +29,23 @@
 ################################################################################
 - filePath: "Spec_Testing/Private_Access.pdf"
   access: private
-  groups: [Test_Group_RG]
+  groups: []
+- filePath: "Spec_Testing/Entitled_Access.pdf"
+  access: private
+  groups: [Test_Group_RG]  
 - filePath: "Spec_Testing/Public_Access.pdf"
   access: public
-  groups: [Test_Group_RG]
-- filePath: "Spec_Testing/Private_File_Access_AccessGroupNotSpecified.pdf"
-  access: private
-  groups: []
-- filePath: "Spec_Testing/Public_File_Access_AccessGroupNotSpecified.pdf"
-  access: public  
-  groups: []
-- filePath: "Spec_Testing/public_access_But_accessGroup_invalid.pdf"
-  access: public  
-  groups: [Access_Group_not_in_DB]
-- filePath: "Spec_Testing/Public_Access_But_accessGroup_invalid.pdf"
-  access: private  
-  groups: [Access_Group_not_in_DB]
+
+
+#   groups: [Test_Group_RG]
+# - filePath: "Spec_Testing/Public_Access_no_.pdf"
+#   access: public
+# - filePath: "Spec_Testing/Private_File_Access_AccessGroupNotSpecified.pdf"
+#   access: private
+#   groups: []
+# - filePath: "Spec_Testing/public_access_But_accessGroup_invalid.pdf"
+#   access: public  
+#   groups: [Access_Group_not_in_DB]
+# - filePath: "Spec_Testing/Public_Access_But_accessGroup_invalid.pdf"
+#   access: private  
+#   groups: [Access_Group_not_in_DB]
