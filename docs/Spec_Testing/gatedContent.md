@@ -2,9 +2,9 @@
 
 **Current Version:** Released on May 6, 2022
 
-[Private Access - PDF]D(assets/files/Spec_Testing/Private_Access.pdf)
+[Private Access - PDF]D(Spec_Testing/Private_Access.pdf)
 
-[Public Access - PDF](Spec_Testing/Public_Access.pdf)
+[Public Access - PDF](Public_Access.pdf)
 
 this file doesnot exist.
 
