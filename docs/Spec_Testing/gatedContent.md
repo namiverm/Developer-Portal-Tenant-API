@@ -2,7 +2,7 @@
 
 **Current Version:** Released Dec 2023
 
-[Private Access, so file can be accessed after login - PDF]D(?path=assets/files/Spec_Testing/Private_Access.pdf)
+[Private Access, so file can be accessed after login - PDF](?path=assets/files/Spec_Testing/Private_Access.pdf)
 
 [Public Access, So anyone can check it - PDF](?path=assets/files/Spec_Testing/Public_Access.pdf)
 
@@ -10,7 +10,7 @@
 
 ** Below file doesn't exist**
 
-[Private File that does not Exist]D(?path=assets/files/Spec_Testing/Private_Access_File_not_exist.pdf)
+[Private File that does not Exist](?path=assets/files/Spec_Testing/Private_Access_File_not_exist.pdf)
 
 [Public Access  that does not Exist](?path=assets/files/Spec_Testing/Public_Access_File_not_exist.pdf)
 
