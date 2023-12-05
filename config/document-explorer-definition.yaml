@@ -49,3 +49,11 @@
                   link: docs/tutorials/markdown/tabs.md
         - title: FAQ
           link: docs/faq/faq.md
+
+        - title: Testing
+          open: true
+          sections: 
+            - title: TestingDocs
+              link: docs/SpecTest/SpecTest.md
+              access: public
+              groups: []
