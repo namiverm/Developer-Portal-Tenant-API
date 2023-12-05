@@ -53,6 +53,7 @@
     "documenttree": "/v1/docs/DeveloperStudio",
     "documenttreeV2": "/v2/docs/DeveloperStudio",
     "sandbox": "/v1/sandboxrun/DeveloperStudio",
+    "accessConfig": "/v1/fileAccess/DeveloperStudio",
     "assets": "/v1/assets/DeveloperStudio",
     "feature": [
       {
