@@ -35,7 +35,17 @@
   groups: [TEST_GROUP_RG]  
 - filePath: "Spec_Testing/Public_Access.pdf"
   access: public
-- filePath: "SpecTest/Test_Equinox_PIMS.pdf"
+- filePath: "Spec_Testing/Public_Access.txt"
+  access: public
+- filePath: "Spec_Testing/Public_Access.xlsx"
+  access: public
+- filePath: "Spec_Testing/Public_Access.doc"
+  access: public
+- filePath: "Spec_Testing/Public_Access.zip"
+  access: public
+- filePath: "Spec_Testing/Public_Access.html"
+  access: public  
+- filePath: "SpecTest/Test_Equinox_PIMS.csv"
   access: private
   groups: [UCOMM_MOBILE_GATEWAY]  
 
