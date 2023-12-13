@@ -3,18 +3,29 @@
 **Current Version:** Released Dec 2023
 **Public Access**
 Supported Types : .pdf, .txt, .doc, .xlsx, .zip, .ppt 
-Supported Types : .csv, .html
+
 [Public_Access - type pdf]D(Public_Access.pdf)
+
 [Public_Access - type doc]D(Public_Access.doc)
+
 [Public_Access - type xlsx]D(Public_Access.xlsx)
+
 [Public_Access - type txt]D(Public_Access.txt)
+
 [Public_Access - type zip]D(Public_Access.zip)
 
-[Public_Access - type zip]D(Public_Access.csv)
+[Public_Access - type ppt]D(Public_Access.ppt)
+
+Un-Supported Types : .csv, .html
+
+[Public_Access - type html]D(Public_Access.html)
+
 **Private Access**
+
 [Private_Access.pdf]D(Private_Access.pdf)
 
 **Entitled Access**
+
 [Entitled_Access.pdf]D(Entitled_Access.pdf)
 
 ** Below file doesn't exist**
