@@ -43,6 +43,8 @@
   access: public
 - filePath: "Spec_Testing/Public_Access.zip"
   access: public
+- filePath: "Spec_Testing/Public_Access.ppt"
+  access: public  
 - filePath: "Spec_Testing/Public_Access.html"
   access: public  
 - filePath: "SpecTest/Test_Equinox_PIMS.csv"
