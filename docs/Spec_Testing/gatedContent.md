@@ -43,3 +43,5 @@ Un-Supported Types : .csv, .html
 
 [Test_Equinox_PIMS.pdf]D(Test_Equinox_PIMS.pdf)
 
+# Test file
+[Test File]D(Fiserv_Logo.jpg)
