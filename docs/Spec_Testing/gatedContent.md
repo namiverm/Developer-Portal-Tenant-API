@@ -1,20 +1,45 @@
 # Gated Content Testing
 
 **Current Version:** Released Dec 2023
+**Public Access**
+Supported Types : .pdf, .txt, .doc, .xlsx, .zip, .ppt 
 
-[Private Access, so file can be accessed after login - PDF]D(?path=assets/files/Spec_testing/Private_Access.pdf)
+[Public_Access - type pdf]D(Public_Access.pdf)
 
-[Public Access, So anyone can check it - PDF](?path=assets/files/Spec_testing/Public_Access.pdf)
+[Public_Access - type doc]D(Public_Access.doc)
 
-[Entitled Access - PDF](?path=assets/files/Spec_Testing/Entitled_Access.pdf)
+[Public_Access - type xlsx]D(Public_Access.xlsx)
 
-this file doesnot exist.
+[Public_Access - type txt]D(Public_Access.txt)
 
-[not_a_file_updated](not_a_file_updated.pdf)
+[Public_Access - type zip]D(Public_Access.zip)
 
-[test_file_not_exist](test_file_not_exist.pdf)
+[Public_Access - type ppt]D(Public_Access.ppt)
 
-To [obtain an API-Key and API-Secret](?path=docs/Resources/Guides/Dev-Studio/Key-Management.md), access the developer dashboard to create a workspace by using the default MID or [creating a dedicated sandbox MID](?path=docs/Resources/Guides/Dev-Studio/Account-Management.md).
+Un-Supported Types : .csv, .html
 
-<!-- theme: info -->
-> These are required in the [Authentication Header](?path=docs/Resources/API-Documents/Authentication-Header.md).
+[Public_Access - type html]D(Public_Access.html)
+
+**Private Access**
+
+[Private_Access.pdf]D(Private_Access.pdf)
+
+**Entitled Access**
+
+[Entitled_Access.pdf]D(Entitled_Access.pdf)
+
+** Below file doesn't exist**
+
+[Private File that does not Exist](?path=assets/files/Spec_Testing/Private_Access_File_not_exist.pdf)
+
+[Public Access  that does not Exist](?path=assets/files/Spec_Testing/Public_Access_File_not_exist.pdf)
+
+[Entitled Access  that does not Exist](?path=assets/files/Spec_Testing/Entitled_Access_File_not_exist.pdf)
+
+
+# PT
+
+[Entitled_Access.pdf]D(Entitled_Access.pdf)
+
+[Test_Equinox_PIMS.pdf]D(Test_Equinox_PIMS.pdf)
+

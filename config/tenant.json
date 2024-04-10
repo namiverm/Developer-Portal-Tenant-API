@@ -53,6 +53,7 @@
     "documenttree": "/v1/docs/DeveloperStudio",
     "documenttreeV2": "/v2/docs/DeveloperStudio",
     "sandbox": "/v1/sandboxrun/DeveloperStudio",
+    "accessConfig": "/v1/fileAccess/DeveloperStudio",
     "assets": "/v1/assets/DeveloperStudio",
     "feature": [
       {
@@ -78,94 +79,9 @@
     ],
     "adminAddresses": [
       {
-        "groupId": "BANA",
+        "groupId": "TEST_GROUP_RG",
         "adminAddress": [
-          "bana_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
-        ]
-      },
-      {
-        "groupId": "DATAWIRE_NAMS",
-        "adminAddress": [
-          "bana_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
-        ]
-      },
-      {
-        "groupId": "DATAWIRE_SECURE_TRANSPORT_XML_SOAP_SRS_INTERFACES_FOR_RAPID_CONNECT",
-        "adminAddress": [
-          "bana_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
-        ]
-      },
-      {
-        "groupId": "DLL",
-        "adminAddress": [
-          "dll_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
-        ]
-      },
-      {
-        "groupId": "JAVA",
-        "adminAddress": [
-          "java_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
-        ]
-      },
-      {
-        "groupId": "LINUX",
-        "adminAddress": [
-          "linux_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
-        ]
-      },
-      {
-        "groupId": "MULTILINK_SPECIFICATIONS",
-        "adminAddress": [
-          "MULTILINK_SPECIFICATIONS_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
-        ]
-      },
-      {
-        "groupId": "NETWORK_TOKEN",
-        "adminAddress": [
-          "networktoken_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
-        ]
-      },
-      {
-        "groupId": "OFFSITE_SPECS",
-        "adminAddress": [
-          "OFFSITE_SPECS_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
-        ]
-      },
-      {
-        "groupId": "SOUTH",
-        "adminAddress": [
-          "south_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
-        ]
-      },
-      {
-        "groupId": "TELECHECK",
-        "adminAddress": [
-          "telecheck_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
-        ]
-      },
-      {
-        "groupId": "TRANSARMOR",
-        "adminAddress": [
-          "Transformer_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
-        ]
-      },
-      {
-        "groupId": "TRANSARMOR_P2PE_PIMS",
-        "adminAddress": [
-          "Transformer_p2pe_pims_admin@fiserv.com, prakash.thakuri@fiserv.com",
-          "ivor.rodrigues@fiserv.com"
+          "rekha.gupta@fiserv.com, yanyan.yang@fiserv.com"
         ]
       }
     ]
