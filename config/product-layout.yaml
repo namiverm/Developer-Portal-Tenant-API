@@ -37,7 +37,7 @@ benefits:
   - title: Accelerate Revenue
     description: Intelligent orchestration layer that reduces code complexity and operational costs.
   - title: Optimize Commerce
-    description: Backoffice automation with a modern set of tools and APIs.
+    description: BackOffice automation with a modern set of tools and APIs.
 guides:
   - title: Setup a tenant
     description: Fiserv Products within the Fiserv portfolio that are showcased through the studio are known as tenants. Tenants standup a tenant server that will serve all the content through the studio for developers visiting the Fiserv Developer Studio.
