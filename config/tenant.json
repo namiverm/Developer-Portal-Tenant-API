@@ -34,8 +34,8 @@
   "product": {
     "featured": true,
     "logoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Portal_Logo.png",
-    "description": "To onboard properly into the Developer Studio as a new tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.",
-    "longDescription": "To onboard properly into the Developer Studio as a new tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.",
+    "description": "Developer Studio is a product of Developer Studio where developers can come to the studio to develop.",
+    "longDescription": "Developer Studio is a product of Developer Studio where developers can come to the studio to develop.",
     "apiSpecification": "/v1/apis/DeveloperStudio",
     "layout": "/v1/layouts/DeveloperStudio",
     "documentation": "/v1/docs/DeveloperStudio",
