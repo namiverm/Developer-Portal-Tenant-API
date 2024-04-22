@@ -45,7 +45,7 @@ guides:
   - title: Preview and Publish
     description: This quick start guide will provide you with the necessary steps to get you from API Specification to ready-to-preview/publish API Documentation in 10 minutes flat.
     link: docs/getting-started/preview-and-publish-content/preview-and-publish.md
-  - title: Using Markdown
+  - title: Markdown Usage
     description: Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents.
     link: docs/resources/markdown-support.md
 featuredFeatures:
