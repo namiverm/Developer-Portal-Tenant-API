@@ -31,7 +31,7 @@
       sections:
         - title: API Guidelines
           link: docs/resources/guides/api-guide.md
-        - title: how it works
+        - title: How it works
           link: docs/resources/guides/how-to-use-stoplight.md
         - title: Learn how to use Prism Stoplight
           link: docs/resources/guides/how-to-use-stoplight.md
